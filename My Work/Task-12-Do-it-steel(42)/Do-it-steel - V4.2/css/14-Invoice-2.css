@@ -1,0 +1,504 @@
+/*============================== Page Cont Starts ============================*/
+
+/*============================== data-section ============================= */
+
+.data-section {
+  height: 100vh;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.unpaid-btn {
+  background-color: #fff9d5;
+  color: #f3dc53;
+  padding: 6px 15px;
+  border-radius: 50px;
+}
+
+.unpaid-btn:hover {
+  color: #f3dc53;
+}
+
+.pay-btn {
+  background-color: #f3dc53;
+  padding: 6px 15px;
+  color: #000;
+  border-radius: 50px;
+  display: block;
+  margin-right: 30px;
+}
+
+.pay-btn:hover {
+  color: #000;
+}
+
+.addres {
+  color: #656565;
+}
+
+.addres > p {
+  font-weight: 300;
+}
+
+.client-details {
+  color: #787878;
+}
+
+.agent-details > span {
+  color: #656565;
+}
+
+.agent-details > strong {
+  color: #bf932d;
+}
+
+.sec-invoice {
+  color: #656565;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.discription {
+  color: #656565;
+}
+
+.tab-head {
+  font-weight: 700;
+}
+
+.sub-total {
+  font-weight: 500;
+}
+
+.total-amount {
+  font-weight: 900;
+}
+
+.send-btn {
+  background-color: #f3dc53;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: #000;
+}
+
+.send-btn:hover {
+  color: #fff;
+  background-color: #323b4a;
+}
+
+.fv-main > span {
+  color: #ff9d00;
+  font-weight: 500;
+}
+
+.progres-btn {
+  background-color: #f3dc53;
+  padding: 5px 12px;
+  color: #000;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.progres-btn:hover {
+  color: #000;
+}
+
+.quotaion-amount {
+  color: #a7a7a7;
+  font-size: 14px;
+}
+
+.quo-amnt {
+  color: #bf932d;
+}
+
+.deposit {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+.paid-btn {
+  background-color: #ebfaef;
+  color: #65da5f;
+  padding: 8px 18px;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.date {
+  color: #a7a7a7;
+  font-size: 14px;
+}
+
+.dates {
+  color: #bf932d;
+}
+
+.footer > p {
+  font-size: 20px;
+}
+
+.invoice-id > a:hover {
+  color: #bf932d !important;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  position: initial;
+  font-size: 14px !important;
+}
+
+/*============================== Page Cont End ============================*/
+
+/*=============================== User Section =============================*/
+
+/* .user-main {
+    height: 100vh;
+  } */
+
+#open-user {
+  pointer-events: none;
+}
+
+.user-cont {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 16px;
+  background-color: #f4f5f6;
+  padding: 10px 16px;
+  z-index: 9999;
+}
+
+.add-bg {
+  background-color: #fff;
+}
+
+.sec-cont-main {
+  background-color: #f4f5f6;
+  /* padding: 10px; */
+  height: 92vh;
+  padding: 10px 16px;
+  overflow: scroll;
+}
+
+.part-2 {
+  display: flex;
+  align-items: center;
+}
+
+.bell {
+  position: relative;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.bell > img {
+  height: 20px;
+}
+
+.bell > span {
+  padding: 1px 7px;
+  border-radius: 50%;
+  background-color: #ff9501;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+
+.user-logo {
+  margin-right: 10px;
+}
+
+.user-name > span {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+.user-name > a {
+  display: block;
+  color: #bf932d;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.proj-main {
+  padding: 10px 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin: 5px;
+}
+
+.user-d-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.mt-3 {
+  margin-top: 5px !important;
+}
+
+.proj-name > span {
+  color: #a7a7a7;
+  font-weight: 100;
+}
+
+.date > span {
+  color: #a7a7a7;
+  font-size: 12px;
+}
+
+div.head-shadow {
+  --bs-gutter-x: 0rem !important;
+  width: 98% !important;
+}
+/* ===========================================================================
+                                    * Media Query * 
+  ===============================================================================*/
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1399px) {
+  .nav-bg {
+    padding: 30px 10px;
+  }
+
+  .logo-main > img {
+    width: 80%;
+  }
+
+  /* User Section */
+
+  .bell {
+    padding: 15px;
+  }
+
+  .bell > span {
+    font-size: 12px;
+    top: 6px;
+    right: 5px;
+  }
+
+  .user-name > span {
+    font-size: 12px;
+  }
+
+  .user-name > a {
+    font-size: 12px;
+  }
+
+  .data-box {
+    margin: 14px 10px;
+    box-shadow: 0px 2px 6px #0000001f;
+    border-radius: 5px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .dates {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  .nav-bg {
+    padding: 30px 10px;
+  }
+
+  .logo-main > img {
+    width: 90%;
+  }
+
+  /* User Section */
+  .invoice-inv {
+    font-size: 16px !important;
+  }
+
+  .pay-btn {
+    font-size: 14px;
+  }
+
+  .addres > strong {
+    font-size: 17px !important;
+  }
+
+  .addres > p {
+    font-size: 14px;
+  }
+
+  .invoice-id > a {
+    font-size: 14px;
+  }
+
+  .progres-btn {
+    font-size: 11px;
+  }
+
+  .user-name > span,
+  .user-name > a {
+    font-size: 13px;
+  }
+
+  .quotaion-amount {
+    font-size: 12px;
+  }
+
+  .deposit {
+    font-size: 13px;
+  }
+
+  .quo-amnt {
+    font-size: 15px;
+  }
+
+  .date {
+    font-size: 13px;
+  }
+
+  .dates {
+    font-size: 14px;
+  }
+
+  .paid-btn {
+    padding: 5px 12px;
+  }
+
+  .fv-main > span {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1620px) {
+  .date {
+    font-size: 12px;
+  }
+
+  .dates {
+    font-size: 12px;
+  }
+}
+
+/* User Section Special */
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1365px) {
+  .data-section {
+    height: 100vh;
+    overflow-y: unset;
+  }
+
+  .fixed {
+    display: none;
+  }
+
+  #open-user {
+    pointer-events: visible;
+  }
+
+  .bell {
+    margin-right: 10px;
+  }
+
+  .user-main {
+    position: absolute;
+    right: 0;
+    width: 35% !important;
+    /* display: none; */
+  }
+
+  .user-cont {
+    background-color: #fff;
+  }
+
+  .add-bg {
+    background-color: #f4f5f6;
+  }
+
+  .sec-cont-main {
+    display: none;
+  }
+
+  .data-section {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 1070px) and (max-device-width: 1199px) {
+  #open-user {
+    pointer-events: visible;
+  }
+
+  .user-main {
+    width: 32%;
+  }
+
+  .user-cont {
+    background-color: #fff;
+  }
+
+  .add-bg {
+    background-color: #f4f5f6;
+  }
+
+  .sec-cont-main {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  .data-section {
+    height: 100vh;
+    overflow-y: initial;
+  }
+
+  .fixed {
+    display: none;
+  }
+
+  #open-user {
+    pointer-events: visible;
+  }
+
+  .bell {
+    margin-right: 0;
+  }
+
+  .user-main {
+    position: absolute;
+    right: 0;
+    width: 42%;
+  }
+
+  .user-cont {
+    background-color: #fff;
+  }
+
+  .add-bg {
+    background-color: #f4f5f6;
+  }
+
+  .sec-cont-main {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1397px) {
+  .sec-cont-main {
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (min-device-width: 1400px) and (max-device-width: 1455px) {
+  .sec-cont-main {
+    padding: 10px 6px;
+  }
+}

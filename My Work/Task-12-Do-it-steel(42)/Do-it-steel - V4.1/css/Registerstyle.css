@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/*font-family: 'Roboto', sans-serif;*/
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v29-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v29-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v29-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v29-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v29-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v29-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v29-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v29-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v29-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v29-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/roboto-v29-latin-500.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v29-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v29-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v29-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v29-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v29-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/roboto-v29-latin-700.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+:root {
+  --theme-color: #f3dc53;
+  --text-color: #000000;
+  --themewhite: #ffffff;
+  --themelightdark: #656565;
+  --themegrey: #8f9194;
+}
+.row {
+  margin: 0;
+  padding: 0;
+}
+.textgrey {
+  color: var(--themegrey);
+}
+.textblack {
+  color: var(--text-color);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
+}
+.main {
+  min-height: 100vh;
+}
+* {
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.left_info h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.left_info h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.left_info > Span {
+  color: var(--themegrey);
+}
+.left_info p {
+  color: #bf932d;
+}
+.sign > span,
+form span {
+  font-weight: 700;
+  color: #323b4a;
+  padding-left: 2px;
+}
+.fill_form {
+  font-weight: 500;
+  color: var(--themelightdark);
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 1px;
+  margin-top: 8px;
+}
+
+.theme_btn {
+  display: block;
+  width: 100%;
+  font-size: 16px !important;
+  padding: 10px 0px;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  border-radius: 150px;
+  font-weight: 500;
+}
+
+.theme_btn:hover {
+  background-color: #323b4a;
+  color: var(--themewhite) !important;
+}
+
+#validationFormCheck2:checked {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+#validationFormCheck2 {
+  border-color: var(--themegrey);
+}
+
+#invalidCheck:checked {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+#invalidCheck {
+  border-color: var(--themegrey);
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  border-color: #ced4da !important;
+  background-image: none !important;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
+.form-select.is-valid:not([multiple]):not([size]),
+.form-select.is-valid:not([multiple])[size="1"],
+.was-validated .form-select:valid:not([multiple]):not([size]),
+.was-validated .form-select:valid:not([multiple])[size="1"] {
+  background-image: none;
+}
+
+.form-select.is-valid,
+.was-validated .form-select:valid {
+  border-color: #ced4da !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.alert-line {
+  margin-top: -10px;
+}
+
+.btn {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 500000s ease-in-out;
+}
+
+.form-check span {
+  color: #bf932d;
+  font-weight: 500;
+}
+
+.account_login span {
+  font-weight: 500;
+  color: var(--themelightdark);
+}
+.account_login > span a {
+  color: #bf932d;
+}
+.main_left {
+  position: relative;
+}
+.copyright h5 {
+  font-size: 14px;
+  color: #4f4f51;
+  font-weight: 400;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.right_info {
+  height: 100vh;
+  width: 50%;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.right_info img {
+  width: 100%;
+  height: 100%;
+}
+
+.form-control,
+.form-select {
+  height: 40px;
+  border-radius: 0px;
+  transition: border-color 0.15s ease-in-out, box-shadow 5000000s ease-in-out;
+}
+
+.invalid-feedback {
+  line-height: 18px;
+}
+
+/* modal */
+.modal-content {
+  border-radius: 15px;
+}
+.modal-body {
+  position: relative;
+  justify-content: center;
+}
+.modal .m-close {
+  position: absolute;
+  top: 3.3%;
+  left: 92.6%;
+}
+.modal-img img {
+  width: 73px;
+  height: 91px;
+  margin: 9px auto;
+}
+
+.modal-text p {
+  color: #8f9194;
+  text-align: center;
+}
+
+.modal-text b {
+  color: #000000;
+}
+
+.m2-close {
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+
+/*=================================================================
+											Midia Query
+===================================================================*/

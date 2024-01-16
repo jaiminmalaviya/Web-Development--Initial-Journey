@@ -1,0 +1,539 @@
+/* ================================= main-body ==================================== */
+a{
+  color: #000;
+}
+
+/*============================== Page Cont Starts ============================*/
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.section-main {
+  padding: 0 30px 0 30px !important;
+}
+
+.page-path > span > a:hover {
+  color: #000;
+}
+
+/*============================== data-section ============================= */
+.data-section {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.search-main {
+  position: relative;
+}
+
+.search-main > i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #d1d1d1;
+}
+
+.search-main > input {
+  padding-left: 40px;
+}
+
+.pay-out-bg {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px #0000001f;
+  border-radius: 5px;
+}
+
+.amount {
+  color: #c3c3c5;
+  font-size: 30px;
+}
+
+.values {
+  color: #656565;
+}
+
+.main-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.single-box {
+  width: 33.33%;
+  margin: 10px;
+  background-color: #ffffff !important;
+}
+
+.single-box1 {
+  width: 33.33%;
+  margin: 10px;
+  background-color: #ececec;
+}
+
+.single-box2 {
+  width: 33.33%;
+  margin: 10px;
+  background-color: #fbf4cb;
+}
+
+.single-box3 {
+  width: 33.33%;
+  margin: 10px;
+  background-color: rgb(195, 195, 197, 0.3);
+}
+.single-box:first-child {
+  margin-left: 0px;
+}
+
+.add-use-btn {
+  background-color: #f3dc53;
+  font-size: 14px;
+  padding: 6px 15px;
+  border-radius: 50px;
+}
+
+.add-use-btn:hover {
+  color: #fff;
+  background-color: #323b4a;
+}
+
+.summary {
+  color: #656565;
+}
+
+.summary > div > .email {
+  display: block;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.summary:hover {
+  background-color: #d2d4da;
+}
+
+.sum-head {
+  font-size: 14px;
+}
+
+.users > div > span {
+  color: #656565;
+}
+
+.details > th {
+  font-weight: 100;
+}
+
+.dollar {
+  color: #bf932d;
+}
+
+.slide-btn {
+  background-color: rgba(50, 59, 74, 0.2);
+  padding: 10px 14px;
+  border-radius: 3px;
+}
+.slide-btn0 {
+  background-color: rgba(50, 59, 74, 0.2);
+  padding: 10px 14px;
+  border-radius: 3px;
+}
+
+.slide-btn1 {
+  background-color: rgba(50, 59, 74, 1);
+  padding: 10px 14px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.slide-btn1:hover {
+  color: #fff;
+}
+.slide-btn2:hover {
+  color: #000;
+}
+.slide-btn2 {
+  background-color: rgba(50, 59, 74, 0);
+  color: #000;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+
+.head-shadow {
+  box-shadow: 0 2px 12px #ccc;
+  padding: 10px 0px 8px;
+}
+.payout-btn {
+  background-color: #f3dc53;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.payout-btn:hover {
+  color: #000;
+}
+
+.copyright {
+  transform: translateY(100px);
+  padding: 20px;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  font-size: 14px !important;
+}
+
+.footer p {
+  font-size: 20px;
+}
+
+.pay-outs-main > .row {
+  --bs-gutter-x: 0rem;
+}
+
+/*============================== Page Cont End ============================*/
+
+/*=============================== User Section =============================*/
+
+.user-cont {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 16px;
+  background-color: #fff;
+  padding: 10px 16px;
+  z-index: 9999;
+}
+
+.part-2 {
+  display: flex;
+  align-items: center;
+}
+
+.bell {
+  position: relative;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.bell > img {
+  height: 20px;
+}
+
+.bell > span {
+  padding: 1px 7px;
+  border-radius: 50%;
+  background-color: #ff9501;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+
+.user-logo {
+  margin-right: 10px;
+}
+
+.user-name > span {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+.user-name > a {
+  display: block;
+  color: #bf932d;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* ===========================================================================
+                                      * Media Query * 
+    ===============================================================================*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .nav-bg {
+    padding: 30px 10px;
+  }
+
+  .logo-main > img {
+    width: 80%;
+  }
+
+  /* User Section */
+
+  .bell {
+    padding: 15px;
+  }
+
+  .bell > span {
+    font-size: 12px;
+    top: 6px;
+    right: 5px;
+  }
+
+  .user-name > span {
+    font-size: 12px;
+  }
+
+  .user-name > a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pro-name {
+    font-size: 14px;
+  }
+  .amount {
+    font-size: 20px;
+  }
+
+  .pro-btn {
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+
+  .values {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  .nav-bg {
+    padding: 30px 10px;
+  }
+
+  .logo-main > img {
+    width: 90%;
+  }
+
+  /* User Section */
+
+  .bell {
+    padding: 15px;
+  }
+
+  .bell > span {
+    font-size: 12px;
+    top: 6px;
+    right: 5px;
+  }
+
+  .user-name > span {
+    font-size: 12px;
+  }
+
+  .user-name > a {
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1399px) {
+  .amount {
+    font-size: 22px !important;
+  }
+
+  .pro-name {
+    font-size: 13px !important;
+  }
+
+  .invoice {
+    transform: translateY(5px);
+    font-size: 10px;
+  }
+
+  .sum-head {
+    font-size: 12px;
+  }
+
+  .email {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .email {
+    font-size: 11px;
+  }
+
+  .discription {
+    font-size: 12px;
+  }
+
+  .users > div > a > img {
+    height: 30px !important;
+  }
+
+  
+
+  .add-use-btn {
+    font-size: 12px;
+  }
+
+  .manufacture {
+    font-size: 13px;
+  }
+
+  .parsentage {
+    font-size: 24px !important;
+  }
+
+  .page-btn {
+    padding: 5px 14px;
+  }
+
+  .page-1-btn {
+    padding: 5px 14px;
+  }
+
+  .slide-btn {
+    padding: 6px 14px;
+  }
+
+  .slide-btn0 {
+    padding: 6px 14px;
+  }
+
+  .slide-btn1 {
+    padding: 6px 14px;
+  }
+
+  .user-section {
+    font-size: 12px !important;
+  }
+
+  .pages-num {
+    font-size: 15px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  .summary > div > img {
+    height: 25px;
+  }
+}
+/* User Section Special */
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1365px) {
+  #open-user {
+    pointer-events: none;
+  }
+
+  .bars > a {
+    display: block;
+  }
+
+  .bell {
+    margin-right: 10px;
+  }
+
+  .user-main {
+    position: absolute;
+    right: 0;
+    width: 35% !important;
+    /* display: none; */
+  }
+
+  .amount-main > label {
+    font-size: 14px;
+  }
+
+  .id-name > label {
+    font-size: 12px;
+  }
+
+
+
+  .user-cont {
+    background-color: #fff;
+  }
+
+  .add-bg {
+    background-color: #f4f5f6;
+  }
+
+  .sec-cont-main {
+    display: none;
+  }
+
+  .data-section {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 1070px) and (max-device-width: 1199px) {
+  #open-user {
+    pointer-events: none;
+  }
+
+  .user-main {
+    width: 32%;
+  }
+
+  .user-cont {
+    background-color: #fff;
+  }
+
+  .add-bg {
+    background-color: #f4f5f6;
+  }
+
+  .sec-cont-main {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  #open-user {
+    pointer-events: none;
+  }
+
+  .bars > a {
+    display: block;
+  }
+
+  .bell {
+    margin-right: 0;
+  }
+
+  .user-main {
+    position: absolute;
+    right: 0;
+    width: 42%;
+  }
+
+  .user-cont {
+    background-color: #fff;
+  }
+
+  .add-bg {
+    background-color: #f4f5f6;
+  }
+
+  .sec-cont-main {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-device-width: 1400px) and (max-device-width: 1698px) {
+  .user-name > a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1399px) {
+  .user-name > a {
+    font-size: 11px;
+  }
+}

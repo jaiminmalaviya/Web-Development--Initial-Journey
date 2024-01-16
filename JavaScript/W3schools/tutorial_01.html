@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial - W3schools</title>
+</head>
+
+<body>
+    <!-- document.getElementById('demo').innerHTML = 'Hello JavaScript'; -->
+    <!-- document.getElementById('myImage').src = 'pic_bulbon.gif' -->
+    <!-- document.getElementById("demo").style.display = "none"; -->
+
+    <div>
+        <button onclick="document.getElementById('myImage').src='Img/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="Img/pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='Img/pic_bulboff.gif'">Turn off the light</button>
+    </div><br><br>
+    <hr>
+
+    <div>
+        <h2>My First Web Page</h2>
+        <p>My first paragraph.</p>
+
+        <button type="button" onclick="document.write(5 + 6)">Try it</button>
+        <button onclick="window.print()">Print this page</button>
+    </div><br><br>
+
+    <div>
+        <!-- Numbers are written with or without decimals: 10.50  1001 -->
+        <!-- Strings are text, written within double or single quotes:  "John Doe"  'John Doe' -->
+    </div>
+    <hr>
+</body>
+
+<script>
+    document.write("<br><br><hr><r>hello worlds" + " 5" + 2 + 3);
+    // If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+
+    // alert(5 + 6);
+    // window.print();
+
+    //Variables declared with the var keyword can NOT have block scope.
+    // Variables declared inside a { } block can be accessed from outside the block.
+    typeof "John Doe"     // Returns "string"
+    typeof 3.14           // Returns "number"
+
+</script>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="My Web-development Journey">
+    <meta name="author" content="Jaimin Malaviya">
+    <meta http-equiv="refresh" content="30">
+    <!-- <base href="https://www.w3schools.com/" target="_blank"> -->
+    <title>Document</title>
+    <style>
+        .l1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        .l1 li {
+            float: left;
+            width: 25%;
+        }
+
+        .l1 li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .l1 li a:hover {
+            background-color: #111111;
+        }
+
+        /* .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        } */
+    </style>
+</head>
+
+
+<body>
+    <ul class="l1">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul><br>
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea
+            <ol>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ol>
+        </li>
+        <li>Milk</li>
+    </ol><br>
+
+    <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span
+            style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+
+    <h1 id="demo"></h1>
+    <script>
+        document.getElementById("demo").innerHTML = "&nbsp;Hello JavaScript!";
+        document.getElementById("demo").style.fontSize = "35px";
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.backgroundColor = "yellow";
+        document.getElementById("image").src = "picture.gif";
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+    <img src="mac.jpg" style="max-width: 50%;">
+
+
+
+</body>
+
+</html>

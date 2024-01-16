@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-Shipping Details</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="row align-items-center justify-content-between spacer-x ">
+            <div class="col-md-auto col-2">
+                <div class="nav-logo">
+                    <a href="#">Logo</a>
+                </div>
+            </div>
+
+            <div class="col-md-auto col-1 order-2 order-md-1">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Our services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">New Arrival</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> Contact us</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+            <div class="col-md-auto offset-5 offset-md-0 col-3 order-1 order-md-2 right-nav">
+                <ul class="d-flex justify-content-end align-items-center">
+                    <li>
+                        <a href="#" class="thm-btn login-btn">Login</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <img src="images/search-icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <img src="images/cart-icon.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Section-01 -->
+    <div class="sec-01 main-section">
+        <div class="sec-01-heading main-section-heading bottom-border head-04 w-100 d-flex justify-content-between align-items-center"
+            id="shipping-address-header">
+            <h4>Shipping Address</h4>
+            <div class="down-arrow sec-01-arrow-up">
+                <img src="images/down-arrow-icon.svg" alt="">
+            </div>
+            <div class="up-arrow sec-01-arrow-down">
+                <img src="images/up-arrow-icon.svg" alt="">
+            </div>
+        </div>
+        <form action="#" id="shipping-address">
+            <div class="shipping-address-form row justify-content-sm-between justify-content-center main-section-body">
+                <div class="col-sm-5 col-10">
+                    <label for="validationDefault01" class="form-label">
+                        <h5>First Name</h5>
+                    </label>
+                    <div class="form-input">
+                        <img src="images/user-g-icon.svg" alt="">
+                        <input type="text" class="form-control" id="validationDefault01"
+                            placeholder="Enter Your First Name" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-10">
+                    <label for="validationDefault01" class="form-label">
+                        <h5>Last Name</h5>
+                    </label>
+                    <div class="form-input">
+                        <img src="images/user-g-icon.svg" alt="">
+                        <input type="text" class="form-control" id="validationDefault01"
+                            placeholder="Enter Your Last Name" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-10">
+                    <label for="validationDefault01" class="form-label">
+                        <h5>Email</h5>
+                    </label>
+                    <div class="form-input">
+                        <img src="images/email-g-icon.svg" alt="">
+                        <input type="email" class="form-control" id="validationDefault01"
+                            placeholder="Enter Your Email address" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-10">
+                    <label for="validationDefault01" class="form-label">
+                        <h5>Phone</h5>
+                    </label>
+                    <div class="form-input">
+                        <img src="images/phone-g-icon.svg" alt="">
+                        <input type="number" class="form-control" id="validationDefault01"
+                            placeholder="Enter Your Phone Number" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-10">
+                    <label for="validationDefault01" class="form-label">
+                        <h5>Address</h5>
+                    </label>
+                    <div class="form-input">
+                        <img src="images/location-g-icon.svg" class="location-icon" alt="">
+                        <input type="text" class="form-control" id="validationDefault01"
+                            placeholder="Enter Your address" autocomplete="off" required>
+                    </div>
+                </div>
+                <button class="thm-btn save-btn m-auto" type="submit">
+                    <h4>Save</h4>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="spacer-y-01"></div>
+
+    <!-- Section-02 -->
+    <div class="sec-01 main-section">
+
+        <div class="sec-01-heading main-section-heading head-04 w-100 d-flex justify-content-between align-items-center"
+            id="payment-details-header">
+            <h4>Payment Details</h4>
+            <div class="down-arrow sec-02-arrow-up">
+                <img src="images/down-arrow-icon.svg" alt="">
+            </div>
+            <div class="up-arrow sec-02-arrow-down">
+                <img src="images/up-arrow-icon.svg" alt="">
+            </div>
+        </div>
+
+        <form action="#" id="payment-details">
+            <div class="main-section-body card-details table-responsive-sm ">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <h5>Your saved credit and debit cards</h5>
+                            </th>
+                            <th scope="col" class="text-center">
+                                <h5>Name on card</h5>
+                            </th>
+                            <th scope="col" class="text-center">
+                                <h5>Expires on</h5>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="d-flex">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label">
+                                    <p>HDFC Bank Debit Card ending in 0134</p>
+                                </label>
+                            </td>
+                            <td class="text-center">
+                                <p>Cameron Williamson</p>
+                            </td>
+                            <td class="text-center">
+                                <p>00/0000</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="payment-details-form row justify-content-sm-between justify-content-center main-section-body">
+
+                <div class="col-sm-5 col-10 pdf-01">
+                    <label for="validationDefault01" class="form-label">
+                        <h5>Name on card</h5>
+                    </label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Enter Your Card Name"
+                        autocomplete="off" required>
+                </div>
+                <div class="col-sm-5 col-10 pdf-02">
+                    <label for="validationDefault01" class="form-label">
+                        <h5>Card Number</h5>
+                    </label>
+                    <input type="number" class="form-control" id="validationDefault01" placeholder="0000-0000-0000-0000"
+                        autocomplete="off" required>
+                </div>
+                <div class="col-sm-5 col-10 pdf-05">
+                    <div class="row justify-content-between">
+                        <div class="col-md-4 col-5 pdf-03">
+                            <label for="validationDefault01" class="form-label d-block">
+                                <h5>Expiration</h5>
+                            </label>
+                            <input type="number" class="form-control d-inline-block" id="validationDefault01"
+                                placeholder="00" oninput="expiry(this)" autocomplete="off" required>
+                            <img src="images/slash-icon.svg" alt="">
+                            <input type="number" class="form-control d-inline-block" id="validationDefault01"
+                                placeholder="00" oninput="expiry(this)" autocomplete="off" required>
+                        </div>
+
+                        <div class="col-md-4 col-5 pdf-04">
+                            <label for="validationDefault01" class="form-label d-flex">
+                                <h5>CVV</h5>
+                                <img src="images/title-icon.svg" title="Lorem ipsum dolor sit amet." class="ps-2"
+                                    alt="">
+                            </label>
+                            <input type="password" class="form-control" id="validationDefault01" placeholder="000"
+                                max="999" oninput="cvv(this)" autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-10">
+                    <button class="add-card-btn w-100" type="submit">
+                        <p>+ Add New Card</p>
+                    </button>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="thm-btn save-btn m-auto" type="submit">
+                        <h4>Payment</h4>
+                    </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <div class="spacer-y-01"></div>
+
+    <!-- Section-03 -->
+    <div class="sec-01 main-section">
+        <div class="sec-01-heading main-section-heading head-04 w-100 d-flex justify-content-between align-items-center"
+            id="order-summary-header">
+            <h4>Order Summary</h4>
+            <div class="down-arrow sec-03-arrow-up">
+                <img src="images/down-arrow-icon.svg" alt="">
+            </div>
+            <div class="up-arrow sec-03-arrow-down">
+                <img src="images/up-arrow-icon.svg" alt="">
+            </div>
+        </div>
+        <div class="order-summary-body  main-section-body" id="order-details">
+            <div class="item-details-01 col-12">
+                <h4>Unisex Cotton Neck Hoodie <span>(Delivery by Tue Dec 28/$20)</span></h4>
+                <p>Size : XL </p>
+                <p>Color : Green</p>
+                <h4>$250</h4>
+            </div>
+            <div class="sec-01-heading w-100">
+                <h4>Price Details</h4>
+            </div>
+            <div class="price-details">
+                <div class="price-details-01 w-100">
+                    <h5 class="fw-normal">Price (1 item)</h5>
+                    <h5 class="text-end">$250</h5>
+                </div>
+                <div class="price-details-02 w-100">
+                    <h5 class="fw-normal">Discount</h5>
+                    <h5 class="text-end">-$0</h5>
+                </div>
+                <div class="price-details-03 w-100">
+                    <h5 class="fw-normal">Delivery Charges</h5>
+                    <h5 class="text-end">$40</h5>
+                </div>
+                <div class="price-details-04 w-100">
+                    <h4>Total Amount</h4>
+                    <h4 class="text-end">$290</h4>
+                </div>
+            </div>
+            <div class="w-100">
+                <button class="thm-btn save-btn m-auto d-block" type="submit">
+                    <h4>Checkout</h4>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer-y-03"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo ms-5 ms-md-2">
+            <h2>Logo</h2>
+        </div>
+        <div class="footer-section row justify-content-between">
+            <div class="col-sm col-md-3 company-details col-6">
+                <div class="footer-left">
+                    <img src="images/location-w-icon.svg" alt="">
+                    <h6>2972 Westheimer Rd. Santa Ana, Illinois 85486 </h6>
+                </div>
+                <div class="footer-left"><img src="images/phone-w-icon.svg" alt="">
+                    <h6>+91 9988776655</h6>
+                </div>
+                <div class="footer-left"> <img src="images/email-w-icon.svg" alt="">
+                    <h6>debra.holt@example.com</h6>
+                </div>
+            </div>
+            <div class="col-auto footer-nav-link">
+                <a href="#">
+                    <h6>Home</h6>
+                </a>
+                <a href="#">
+                    <h6>Our Service</h6>
+                </a>
+                <a href="#">
+                    <h6>New Arrival</h6>
+                </a>
+                <a href="#">
+                    <h6>Category</h6>
+                </a>
+                <a href="#">
+                    <h6>Contact us</h6>
+                </a>
+            </div>
+            <div class="col-auto footer-user-link">
+                <a href="#">
+                    <h6>Account details</h6>
+                </a>
+                <a href="#">
+                    <h6>Orders</h6>
+                </a>
+                <a href="#">
+                    <h6>Downloads</h6>
+                </a>
+                <a href="#">
+                    <h6>Addresses</h6>
+                </a>
+            </div>
+            <div class="col-sm-5 col-11 footer-right mt-sm-0 mt-5">
+                <h4>GET 20% OFF COUPON</h4>
+                <h6>Subscribe our newsletter and get discount 20% off</h6>
+                <form action="#">
+                    <div class="footer-email d-flex">
+                        <input type="email" class="form-control email-input" placeholder="Enter your email" required>
+                        <button class="thm-btn subscribe-btn" type="submit">
+                            <p>Subscribe</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery-3.6.0 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script>
+        // Navigation bar Toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+        // Dropdown menu
+        $(".sec-01-arrow-up").toggle();
+        $(".sec-02-arrow-down").toggle();
+        $(".sec-03-arrow-down").toggle();
+        $("#payment-details").toggle();
+        $("#order-details").toggle();
+
+        $("#shipping-address-header").click(function () {
+            $("#shipping-address").toggle();
+            $(".sec-01-arrow-up").toggle();
+            $(".sec-01-arrow-down").toggle();
+
+            if ($('#shipping-address-header').css('border-bottom') == '0px none rgb(61, 61, 61)') {
+                $('#shipping-address-header').css('border-bottom', '1px solid var(--border-color)');
+            } else { $('#shipping-address-header').css('border-bottom', 'none'); }
+        });
+
+        $("#payment-details-header").click(function () {
+            $("#payment-details").toggle();
+            $(".sec-02-arrow-up").toggle();
+            $(".sec-02-arrow-down").toggle();
+
+            if ($('#payment-details-header').css('border-bottom') == '0px none rgb(61, 61, 61)') {
+                $('#payment-details-header').css('border-bottom', '1px solid var(--border-color)');
+            } else { $('#payment-details-header').css('border-bottom', 'none'); }
+        });
+
+        $("#order-summary-header").click(function () {
+            $("#order-details").toggle();
+            $(".sec-03-arrow-up").toggle();
+            $(".sec-03-arrow-down").toggle();
+
+            if ($('#order-summary-header').css('border-bottom') == '0px none rgb(61, 61, 61)') {
+                $('#order-summary-header').css('border-bottom', '1px solid var(--border-color)');
+            } else { $('#order-summary-header').css('border-bottom', 'none'); }
+        });
+
+        //CVV number validation
+        function cvv(input) {
+            if (input.value < 0) input.value = Math.abs(input.value);
+            if (input.value.length > 3) input.value = input.value.slice(0, 3);
+            $(input).blur(function () {
+            });
+        }
+
+        //Expiry date number Validation
+        function expiry(input) {
+            if (input.value < 0) input.value = Math.abs(input.value);
+            if (input.value.length > 2) input.value = input.value.slice(0, 2);
+            $(input).blur(function () {
+            });
+        }
+
+
+    </script>
+
+</body>
+
+</html>

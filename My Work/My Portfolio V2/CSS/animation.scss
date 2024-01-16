@@ -1,0 +1,207 @@
+.animated {
+  animation-fill-mode: both;
+}
+
+// -------------- intensifies -------------- //
+@keyframes intensifies {
+  @for $i from 0 through 50 {
+    #{$i * 1%} {
+      // Rotate between left and right
+      $sign: -1;
+      @if $i % 2 == 0 {
+        $sign: 1;
+      }
+
+      // Rotation capped at 8
+      $rotation: 8;
+      @if $i < 10 {
+        $rotation: $i;
+      }
+
+      // Final frame is set back to 0
+      @if $i != 50 {
+        transform: translate(
+            $sign * random($i + 1) * 1px,
+            $sign * random($i + 1) * 1px
+          )
+          scale(1 + $i / 50);
+      } @else {
+        transform: translate(0, 0) rotate(0deg);
+      }
+    }
+  }
+}
+
+.intensifies:hover {
+  animation-timing-function: ease;
+  transform-origin: bottom center;
+  animation-name: intensifies;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+// -------------- shakeit -------------- //
+@keyframes shakeit {
+  @for $i from 0 through 100 {
+    #{$i * 1%} {
+      // Rotate between left and right
+      $sign: -1;
+      @if $i % 2 == 0 {
+        $sign: 1;
+      }
+
+      // Rotation capped at 8
+      $rotation: 8;
+      @if $i < 10 {
+        $rotation: $i;
+      }
+
+      // Final frame is set back to 0
+      @if $i != 100 {
+        transform: translate($sign * $i * 2px, 0)
+          rotate($sign * $rotation + deg);
+      } @else {
+        transform: translate(0, 0) rotate(0deg);
+      }
+    }
+  }
+}
+
+.shakeit:hover {
+  animation-timing-function: ease-in;
+  transform-origin: bottom center;
+  animation-name: shakeit;
+  animation-iteration-count: 1;
+  animation-duration: 10s;
+}
+
+// -------------- fontalicious -------------- //
+@keyframes fontalicious {
+  0% {
+    font-family: helvetica;
+  }
+
+  10% {
+    font-family: times;
+  }
+
+  20% {
+    font-family: fantasy;
+  }
+
+  30% {
+    font-family: monospace;
+  }
+
+  40% {
+    font-family: Palatino;
+  }
+
+  50% {
+    font-family: Tahoma;
+  }
+
+  60% {
+    font-family: impact;
+  }
+
+  70% {
+    font-family: cursive;
+  }
+
+  80% {
+    font-family: monospace;
+  }
+
+  90% {
+    font-family: fantasy;
+  }
+
+  99% {
+    font-family: futura;
+  }
+
+  100% {
+  }
+}
+
+.fontalicious {
+  animation-name: fontalicious;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+
+// -------------- Blast Root -------------- //
+@import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore");
+@import url("https://fonts.googleapis.com/css?family=Exo:700,800");
+
+//font stack(s)
+$belle: "La Belle Aurore", cursive;
+$exo: "Exo", sans-serif;
+
+// site colours
+$primary-color: #0b2535;
+$secondary-color: #08fdd8;
+$accent-color: #d8be68;
+
+// text colours
+$text-white: #fff;
+
+.blast-heading {
+  width: 100%;
+  height: 100px;
+  transform-style: preserve-3d;
+}
+
+.home-page {
+  & .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+    & img {
+      width: 25px;
+    }
+    & a {
+      font-weight: 300;
+    }
+  }
+  & h1 {
+    color: $text-white;
+    font-size: 53px;
+    line-height: 48px;
+    margin: 0;
+    font-family: $exo;
+    font-weight: normal;
+    &::before {
+      content: "<h1>";
+      font-family: $belle;
+      color: $secondary-color;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -35px;
+    }
+    &::after {
+      content: "<h1/>";
+      font-family: $belle;
+      color: $secondary-color;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      -webkit-animation: myanim2 1s 3s backwards;
+      animation: myanim2 1s 3s backwards;
+    }
+  }
+  & .blast {
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}

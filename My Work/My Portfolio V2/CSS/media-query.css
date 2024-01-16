@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1200px) {
+  .main {
+    padding: 0 calc(40px + 10%);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main {
+    padding: 0 calc(40px + 10%);
+  }
+}

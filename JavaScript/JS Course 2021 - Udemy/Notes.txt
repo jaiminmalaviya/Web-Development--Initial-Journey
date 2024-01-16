@@ -1,0 +1,33 @@
+--> use backgroundColor instead of background-color in javascript
+
+Station 1, Station 2, Station 3, Station 4, Station 5
+Monday, 1, 2, 2, 3, 1
+Tuesday, 2, 3, 1, 2, 1
+Wednesday, 2, 3, 1, 2, 2
+Tuesday, 1, 1, 2, 4, 2
+Friday, 1, 2, 3, 3, 1
+Saturday, 2, 4, 1, 2, 1
+Sunday, 2, 4, 1, 1, 2
+
+
+Operator,Working Days, Station
+1, Mon-Thu, 4
+2, Wed-Fri, Sun, 4
+3, Tue-Fri, 4
+4, Wed, Thu, Sat, Sun, 5
+5, Wed-Sat, 3
+6, Tue, Wed, Fri, Sun, 1
+7, Thu–Sun, 2
+8, Sun-Tue, Fri, 3
+9, Mon, Tue, Thu, Sat, 4
+10, Mon-Wed, Sat, 1
+11, Thu–Sun, 1
+12, Tue, Wed, Sat, Sun, 1
+13, Mon, Tue, Thu, Fri, 3
+14, Mon-Thu, 2
+15, Tue-Fri, 5
+16, Fri-Mon, 2
+17, Tue, Wed, Sat, Sun, 2
+18, Mon, Thu, Fri, Sun, 1
+19, Mon, Wed, Fri, Sat, 4
+20, Mon, Wed, Thu, Sun, 5

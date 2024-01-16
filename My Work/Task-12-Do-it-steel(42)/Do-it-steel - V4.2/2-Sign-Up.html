@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>2-Sign Up</title>
+
+	<!-- remixicon -->
+	<link rel="stylesheet" type="text/css" href="css/remixicon.css" />
+
+	<!-- Bootstrap v5.1.3 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="css/02-Sign-Up.css" />
+
+</head>
+
+<body>
+	<div class="main">
+		<div class="row align-items-center main_left">
+
+			<!-- Left Section -->
+			<div class="col-md-6 col-lg-6 col-xl-6 p-5 pb-0">
+
+				<!-- Register Page -->
+				<div class="left_info">
+					<h3>Register</h3>
+					<h2 class="my-3">Manage all your features efficiently</h2>
+					<span>Let's get you all set up so you can verify your personal account
+						and begin setting up your profile.</span>
+					<p class="my-3 sign">
+						Please enter your details for all the <span>*</span> marked fields
+					</p>
+					<hr class="mb-2" />
+
+					<!-- Register Form Start  -->
+					<div class="row">
+						<form class="row needs-validation" name="myForm" onsubmit="validateForm(); return false"
+							novalidate>
+							<div class="col-md-6 mb-2">
+								<label for="validationCustom01" class="form-label fill_form">First
+									Name<span>*</span></label>
+								<input type="text" name="fName" class="form-control" id="validationCustom01"
+									autocomplete="off" required />
+								<div class="invalid-feedback">
+									Please enter the first name.
+								</div>
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<label for="validationCustom01" class="form-label fill_form">Last
+									Name<span>*</span></label>
+								<input type="text" name="lName" class="form-control" id="validationCustom01"
+									autocomplete="off" required />
+								<div class="invalid-feedback">
+									Please enter the last name.
+								</div>
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<label for="validationCustom01" class="form-label fill_form">Mobile No.</label>
+								<input type="number" name="fMobile" class="form-control" id="validationCustom01"
+									autocomplete="off" required />
+								<div class="invalid-feedback">
+									This Mobile No. is already associated with an existing
+									account. Please enter a different Mobile No.
+								</div>
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<label for="validationCustom01" class="form-label fill_form">Email
+									ID<span>*</span></label>
+								<input type="email" name="fEmail" class="form-control" id="validationCustom01"
+									autocomplete="off" required />
+								<div class="invalid-feedback">
+									Please enter correct email id to proceed further.
+								</div>
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<label for="validationCustom01"
+									class="form-label fill_form">Password<span>*</span></label>
+								<input type="password" name="fPassword1" class="form-control" id="validationCustom01"
+									required />
+								<div class="invalid-feedback">
+									The entered passwords do not match. Please re-enter the
+									password correctly.
+								</div>
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<label for="validationCustom01" class="form-label fill_form">Confirm
+									Password<span>*</span></label>
+								<input type="password" name="fPassword2" class="form-control" id="validationCustom01"
+									required />
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<label for="validationCustom01" class="form-label fill_form">Address</label>
+								<input type="text" class="form-control" id="validationCustom01" autocomplete="off" />
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<label for="validationCustom01" class="form-label fill_form">Country</label>
+								<input type="text" class="form-control" id="validationCustom01" autocomplete="off" />
+							</div>
+
+							<div class="col-md-6 mb-2 novalidate">
+								<label for="validationCustom04" class="form-label fill_form">State
+									<span>*</span></label>
+								<select class="form-select" name="fState" id="validationCustom04" required>
+									<option selected disabled value=""></option>
+									<option>India</option>
+									<option>US</option>
+									<option>Canada</option>
+									<option>China</option>
+								</select>
+								<div class="invalid-feedback">
+									Please select a valid state.
+								</div>
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<label for="validationCustom05" class="form-label fill_form">Zip <span>*</span></label>
+								<input type="number" name="fZip" class="form-control" id="validationCustom05"
+									autocomplete="off" required />
+								<div class="invalid-feedback">
+									Please provide a valid zip.
+								</div>
+							</div>
+
+							<!-- type of account -->
+							<div class="col-md-12 mb-2 mt-2">
+								<label for="validationCustom05" class="form-label fill_form">Account Type</label>
+								<div class="d-flex">
+									<div class="form-check me-4">
+										<input type="radio" class="form-check-input" id="validationFormCheck2"
+											name="radio-stacked" checked required />
+										<label class="form-label textgrey" for="validationFormCheck2">Customer</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" id="validationFormCheck2"
+											name="radio-stacked" required />
+										<label class="form-label textgrey" for="validationFormCheck2">Vendor</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2 mt-3">
+								<div class="form-check">
+									<div>
+										<input class="form-check-input" type="checkbox" value="" id="invalidCheck" />
+										<label class="form-label textgrey" for="invalidCheck">
+											Yes, I want to receive features display emails.
+										</label>
+									</div>
+									<div>
+										<input class="form-check-input" value="1" name="fTermAndPrivacy" type="checkbox"
+											value="" id="invalidCheck" required />
+										<label class="form-label textgrey" for="invalidCheck">
+											I agree all the <span>Term</span> and
+											<span>Privacy Policy</span>.
+										</label>
+										<div class="invalid-feedback alert-line">
+											You must agree before submitting.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Create Button -->
+							<div class="col-xxl-4 col-xl-5 col-lg-6 col-md-6 my-3">
+								<div class="col-12">
+									<button class="btn theme_btn text-center" type="submit">
+										Create Account
+									</button>
+								</div>
+							</div>
+							<div class="col-12"></div>
+						</form>
+
+						<div class="col-md-12 account_login">
+							<span>Alredy have a account?<a href="1-Login.html" class="ps-2">Login</a></span>
+						</div>
+					</div>
+					<!-- Register Form End  -->
+
+				</div>
+
+				<!-- Footer -->
+				<div class="copyright col-md-12 text-center">
+					<h5>Copyright 2021. All rights are reserved.</h5>
+				</div>
+			</div>
+
+			<!-- Right Section -->
+			<div class="col-md-6 col-lg-6 col-xl-6 pe-0 img">
+				<div class="right_info">
+					<img src="images/right_img.png" alt="" />
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Confirm Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
+		role="dialog">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body row">
+
+					<div class="modal-img text-center p-4 ">
+						<img src="images/Asset 1.png" alt="">
+					</div>
+					<a href="3-Email-Verification.html" class="m-close" onclick="closeModal()">
+						<img src="images/close.svg" alt="">
+					</a>
+					<div class="modal-text ">
+						<p>Email has been sent to you. Please click on <b>"Verify Email"</b><br> to complete the
+							registration
+							process.</p>
+					</div>
+					<div class="col-3 m2-close">
+						<a href="3-Email-Verification.html" class="col-3 btn theme_btn text-center">OK</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-backdrop fade show" id="backdrop" style="display: none;"></div>
+
+
+	<!-- jquery-3.6.0 -->
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+	<!-- Bootstrap v5.1.3 -->
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+	<!-- Custom script -->
+	<script>
+
+		// Modal
+		var modal = document.getElementById('exampleModal');
+
+		function openModal() {
+			document.getElementById("backdrop").style.display = "block"
+			document.getElementById("exampleModal").style.display = "block"
+			document.getElementById("exampleModal").classList.add("show")
+		}
+
+		function closeModal() {
+			document.getElementById("backdrop").style.display = "none"
+			document.getElementById("exampleModal").style.display = "none"
+			document.getElementById("exampleModal").classList.remove("show")
+		}
+
+		// Form Validation
+		(function () {
+			"use strict";
+
+			var forms = document.querySelectorAll(".needs-validation");
+
+			Array.prototype.slice.call(forms).forEach(function (form) {
+				form.addEventListener(
+					"submit",
+					function (event) {
+						if (!form.checkValidity()) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add("was-validated");
+					},
+					false
+				);
+			});
+		})();
+
+		// Email & Phone Number Validation
+		function validateForm() {
+			function validateemail() {
+				let x = document.myForm.fEmail.value;
+				let atposition = x.indexOf("@");
+				let dotposition = x.lastIndexOf(".");
+				if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+					return 0;
+				} else {
+					return 1;
+				}
+			}
+			let emailValue = validateemail();
+
+			function validatetermandprivacy() {
+				if (!document.myForm.fTermAndPrivacy.checked) {
+					return 0;
+				} else {
+					return 1;
+				}
+			}
+			let checkboxValue = validatetermandprivacy();
+
+			var fname = document.forms["myForm"]["fName"].value;
+			var lname = document.forms["myForm"]["lName"].value;
+			var fmobile = document.forms["myForm"]["fMobile"].value;
+			var femail = emailValue;
+			var fpassword1 = document.forms["myForm"]["fPassword1"].value;
+			var fpassword2 = document.forms["myForm"]["fPassword2"].value;
+			var fstate = document.forms["myForm"]["fState"].value;
+			var fzip = document.forms["myForm"]["fZip"].value;
+			var ftermandprivacy = checkboxValue;
+			if (fname != "" && lname != "" && fmobile != "" && femail != "0" &&
+				fpassword1 != "" && fpassword2 != "" && fstate != "" && fzip !=
+				"" && ftermandprivacy != "0") {
+				openModal();
+			}
+		}
+
+	</script>
+</body>
+
+</html>

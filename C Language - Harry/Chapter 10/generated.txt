@@ -1,0 +1,2 @@
+The nummber is 5 
+Thnx for using fprintf

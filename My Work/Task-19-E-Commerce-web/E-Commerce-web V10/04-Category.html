@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-Category</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Price Range Slider -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+    <div class="mob_back_layer d-md-none"></div>
+
+    <!-- Bottom to top  -->
+    <div>
+        <a href="javascript:" id="return-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="row align-items-center justify-content-between spacer-x ">
+            <div class="col-md-auto col-2">
+                <div class="nav-logo">
+                    <a href="01-Index.html">
+                        <img src="images/Logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-auto col-1 order-2 order-md-1">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="01-Index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="02-Our-Services.html" class="nav-link">Our services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="03-New-Arrivals.html" class="nav-link">New Arrival</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="04-Category.html" class="nav-link active-nav"> Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="05-Contact-Us.html" class="nav-link"> Contact us</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+            <div class="col-md-auto offset-5 offset-md-0 col-3 order-1 order-md-2 right-nav">
+                <ul class="d-flex justify-content-end align-items-center">
+                    <li>
+                        <a href="#" class="thm-btn login-btn" onclick="showpopup('login','block');">Login</a>
+                    </li>
+                    <li>
+                        <a href="#" id="nav-search">
+                            <img src="images/search-icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="07-My-cart.html" class="">
+                            <img src="images/cart-icon.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><img src="images/search-w-icon.svg" alt=""></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><img src="images/close-w-icon.svg" alt=""></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+
+    <!-- Start Shopping Banner -->
+    <section>
+        <div class="main_Shopping_banner">
+            <div class="row">
+                <div class="col-auto banner_sec text-center">
+                    <span class="banner_hed">Start Shopping</span>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="01-Index.html">Home</a></li>
+                            <li><img src="images/right-arrow.svg" class="breadcrumb-img" alt=""></li>
+                            <li class="breadcrumb-item active" aria-current="page">Category</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Start Shopping Banner -->
+
+
+    <!-- Start photos gallery -->
+    <section class="main_photo_gallery">
+
+        <div class="row mobile_sort d-md-none">
+            <div class="col-6 p-0 text-center">
+
+                <div class="mob_sort" id="mob-sort">
+                    <img src="images/mobile_sort.svg" alt="">
+                    <span class="mob_drop_sort_text">Sort by</span>
+                </div>
+
+            </div>
+            <div class="col-6 p-0 text-center">
+
+                <div class="mob_filter" id="mob-filter">
+                    <img src="images/mobile-filter.svg" alt="">
+                    <span class="mob_drop_sort_text">Filter</span>
+                </div>
+
+            </div>
+
+            <div class="col-12 sort_pop p-0">
+                <div class="sort_hide_list" id="sortList">
+                    <ul>
+                        <li>
+                            <div class="form-check redio_item">
+                                <label class="form-check-label redio_label" for="flexRadioDefault1">
+                                    Popularity
+                                </label>
+                                <input class="form-check-input sort_redio" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" checked>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="form-check redio_item">
+                                <label class="form-check-label redio_label" for="flexRadioDefault2">
+                                    Price: Low to high
+                                </label>
+                                <input class="form-check-input sort_redio" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="form-check redio_item">
+                                <label class="form-check-label redio_label" for="flexRadioDefault3">
+                                    Price: High to Low
+                                </label>
+                                <input class="form-check-input sort_redio" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault3">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 filter_pop p-0">
+                <div class="filter_hide_list" id="filterList">
+                    <div class="filter_item">
+                        <h3 class="filter_drop_hed mt-2">Category</h3>
+
+                        <div class="row d-flex">
+                            <div class="col-auto sort_chk">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" id="flexCheckDefaul2t" checked
+                                        name="flexradio">
+                                    <label class="form-check-label" for="flexCheckDefault2">
+                                        Dresses
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-auto sort_chk">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" id="flexCheckDefaul2t"
+                                        name="flexradio">
+                                    <label class="form-check-label" for="flexCheckDefault2">
+                                        Blouses
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-auto sort_chk">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" id="flexCheckDefaul2t"
+                                        name="flexradio">
+                                    <label class="form-check-label" for="flexCheckDefault2">
+                                        Skirts
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-auto sort_chk">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" id="flexCheckDefaul2t"
+                                        name="flexradio">
+                                    <label class="form-check-label" for="flexCheckDefault2">
+                                        Costumes
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-auto sort_chk">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" id="flexCheckDefaul2t"
+                                        name="flexradio">
+                                    <label class="form-check-label" for="flexCheckDefault2">
+                                        Accessories
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-auto sort_chk">
+
+                                <div class="form-check">
+                                    <input class="form-check-input form-check-more" type="checkbox" value=""
+                                        id="flexCheckDefaul2t" checked>
+                                    <label class="form-check-label" for="flexCheckDefault2">
+                                        More Categories
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <h3 class="filter_drop_hed">Size</h3>
+
+                        <div class="row">
+                            <div class="col-auto sort_chk">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadio"
+                                        id="flexRadioDefault-m7" checked>
+                                    <label class="form-check-label" for="flexRadioDefault-m7">
+                                        s
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-auto sort_chk">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" id="flexRadioDefault-m8"
+                                        name="flexRadio">
+                                    <label class="form-check-label" for="flexRadioDefault-m8">
+                                        M
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-auto sort_chk">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" id="flexRadioDefault-m9"
+                                        name="flexRadio">
+                                    <label class="form-check-label" for="flexRadioDefault-m9">
+                                        L
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-auto sort_chk">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" id="flexRadioDefault-m10"
+                                        name="flexRadio">
+                                    <label class="form-check-label" for="flexRadioDefault-m10">
+                                        L
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-auto sort_chk">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" id="flexRadioDefault-m11"
+                                        name="flexRadio">
+                                    <label class="form-check-label" for="flexRadioDefault-m11">
+                                        XL
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-auto sort_chk">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" id="flexRadioDefault-m12"
+                                        name="flexRadio">
+                                    <label class="form-check-label" for="flexRadioDefault-m12">
+                                        XXL
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <h3 class="filter_drop_hed">Color</h3>
+
+                        <!-- <dov class="row"> -->
+
+                        <div class="sort_color">
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1" checked>
+                                <a class=" color-sec c-1 "></a>
+                            </label>
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1">
+                                <a class="color-sec c-2 "></a>
+                            </label>
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1">
+                                <a class=" color-sec c-3"></a>
+                            </label>
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1">
+                                <a class="color-sec c-4"></a>
+                            </label>
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1">
+                                <a class="color-sec c-5"></a>
+                            </label>
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1">
+                                <a class="color-sec c-6"></a>
+                            </label>
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1">
+                                <a class="color-sec c-7"></a>
+                            </label>
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1">
+                                <a class="color-sec c-8"></a>
+                            </label>
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1">
+                                <a class="color-sec c-9"></a>
+                            </label>
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1">
+                                <a class="color-sec c-10"></a>
+                            </label>
+                            <label class="tab-1">
+                                <input type="radio" name="tab-input-1" class="tab-input-1">
+                                <a class=" color-sec c-11"></a>
+                            </label>
+                        </div>
+
+                        <!-- </dov> -->
+
+                        <h3 class="filter_drop_hed">Price</h3>
+
+                        <div class="row">
+                            <div class="col-12 sort_price">
+                                <div id="slider2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="spacer-x">
+            <div class="row">
+
+                <div class="col-md-3 pe-0-md d-none d-md-block">
+                    <div class="main_sort_dropdown">
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle sort_drop show" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false">
+                                <span class="drop_sort_text">Sort by</span>
+                                <img src="images/down-arrow-black.png" alt="" class="sort_down_arrow">
+                            </button>
+
+                            <div class="dropdown-menu sort_drop_menu  show p-0">
+
+                                <ul class="sort_item" aria-labelledby="dropdownMenuButton1">
+
+                                    <li>
+                                        <h3 class="short_drop_hed">Category</h3>
+                                    </li>
+
+                                    <li class="sort_chk">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" id="flexCheckDefaul2t"
+                                                checked name="flexradio">
+                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                Dresses
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="sort_chk">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" id="flexCheckDefaul2t"
+                                                name="flexradio">
+                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                Blouses
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="sort_chk">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" id="flexCheckDefaul2t"
+                                                name="flexradio">
+                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                Skirts
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="sort_chk">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" id="flexCheckDefaul2t"
+                                                name="flexradio">
+                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                Costumes
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="sort_chk">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" id="flexCheckDefaul2t"
+                                                name="flexradio">
+                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                Accessories
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="sort_more_chk">
+                                        <div class="form-check">
+                                            <input class="form-check-input form-check-more" type="checkbox" value=""
+                                                id="flexCheckDefaul2t" checked>
+                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                More Categories
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <ul class="sort_item" aria-labelledby="dropdownMenuButton1">
+
+                                    <li>
+                                        <h3 class="short_drop_hed">Size</h3>
+                                    </li>
+
+                                    <li class="sort_chk">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" name="size"
+                                                id="flexRadioDefault-s1" checked>
+                                            <label class="form-check-label" for="flexRadioDefault-s1">
+                                                S
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="sort_chk">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" name="size"
+                                                id="flexRadioDefault-s2">
+                                            <label class="form-check-label" for="flexRadioDefault-s2">
+                                                M
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="sort_chk">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" name="size"
+                                                id="flexRadioDefault-s3">
+                                            <label class="form-check-label" for="flexRadioDefault-s3">
+                                                L
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="sort_chk">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" name="size"
+                                                id="flexRadioDefault-s4">
+                                            <label class="form-check-label" for="flexRadioDefault-s4">
+                                                XL
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="sort_chk mb-0">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" name="size"
+                                                id="flexRadioDefault-s5">
+                                            <label class="form-check-label" for="flexRadioDefault-s5">
+                                                XXL
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <ul class="sort_item" aria-labelledby="dropdownMenuButton1">
+
+                                    <li>
+                                        <h3 class="short_drop_hed">Color</h3>
+                                    </li>
+
+                                    <div class="sort_color">
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1" checked>
+                                            <a class=" color-sec c-1 "></a>
+                                        </label>
+
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1">
+                                            <a class="color-sec c-2 "></a>
+                                        </label>
+
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1">
+                                            <a class=" color-sec c-3"></a>
+                                        </label>
+
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1">
+                                            <a class="color-sec c-4"></a>
+                                        </label>
+
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1">
+                                            <a class="color-sec c-5"></a>
+                                        </label>
+
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1">
+                                            <a class="color-sec c-6"></a>
+                                        </label>
+
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1">
+                                            <a class="color-sec c-7"></a>
+                                        </label>
+
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1">
+                                            <a class="color-sec c-8"></a>
+                                        </label>
+
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1">
+                                            <a class="color-sec c-9"></a>
+                                        </label>
+
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1">
+                                            <a class="color-sec c-10"></a>
+                                        </label>
+
+                                        <label class="tab-1">
+                                            <input type="radio" name="tab-input-1" class="tab-input-1">
+                                            <a class=" color-sec c-11"></a>
+                                        </label>
+                                    </div>
+
+                                </ul>
+
+                                <ul class="sort_item" aria-labelledby="dropdownMenuButton1">
+
+                                    <li>
+                                        <h3 class="short_drop_hed">Price</h3>
+                                    </li>
+
+                                    <!--Start Price Range Slider -->
+
+                                    <li class="sort_price">
+                                        <div id="slider1"></div>
+                                    </li>
+
+                                    <!--End Price Range Slider -->
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-9 ps-0-sm p-0-xm shopping-gallery">
+
+                    <div class="row">
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item text-center">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-1.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+                                            <div class="layer_top_text text-start">
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item img_item_1 text-center mt-0">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-2.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item text-center mt-0">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-3.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item img_item_1 text-center">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-4.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item text-center mt-0">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-5.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item img_item_1 text-center mt-0">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-6.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item text-center">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-7.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item img_item_1 text-center mt-0">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-8.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item text-center mt-0">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-9.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item img_item_1 text-center">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-10.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item text-center mt-0">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-11.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 p-0">
+                            <div class="img_item img_item_1 text-center mt-0">
+
+                                <a href="#" class="gallery_img p-0">
+                                    <img src="images/image-12.png" class="img-fluid ">
+
+                                    <div class="img_layer">
+                                        <div class="layer_text">
+
+                                            <div class="layer_top_text text-start">
+
+                                                <h3>Ruffled Top Brown</h3>
+
+                                                <a class="justify-content-end align-items-center layer_star p-0">
+                                                    <span><img src="images/layer_star.svg" alt="">
+                                                        4.5 </a>
+                                            </div>
+
+                                            <div class="layer_bottom_text text-start">
+
+                                                <h2>$225</h2>
+
+                                                <div
+                                                    class="layer_btn align-items-center d-inline-flex justify-content-end">
+
+                                                    <a href="#" class="add_cart">Add to Cart</a>
+                                                    <a href="#" class="layer_heart ms-5">
+                                                        <img src="images/Heart.svg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End photos gallery -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo ms-5 ms-md-2">
+            <h2>
+                <a href="01-Index.html">
+                    <img src="images/Logo-w.svg" alt="">
+                </a>
+            </h2>
+        </div>
+        <div class="footer-section row justify-content-between">
+            <div class="col-sm col-md-3 company-details col-6">
+                <div class="footer-left">
+                    <img src="images/location-w-icon.svg" alt="">
+                    <h6>2972 Westheimer Rd. Santa Ana, Illinois 85486 </h6>
+                </div>
+                <div class="footer-left"><img src="images/phone-w-icon.svg" alt="">
+                    <h6>+91 9988776655</h6>
+                </div>
+                <div class="footer-left"> <img src="images/email-w-icon.svg" alt="">
+                    <h6>debra.holt@example.com</h6>
+                </div>
+            </div>
+            <div class="col-auto footer-nav-link">
+                <a href="01-Index.html">
+                    <h6>Home</h6>
+                </a>
+                <a href="02-Our-Services.html">
+                    <h6>Our Service</h6>
+                </a>
+                <a href="03-New-Arrivals.html">
+                    <h6>New Arrival</h6>
+                </a>
+                <a href="04-Category.html">
+                    <h6>Category</h6>
+                </a>
+                <a href="05-Contact-Us.html">
+                    <h6>Contact us</h6>
+                </a>
+            </div>
+            <div class="col-auto footer-user-link">
+                <a href="#">
+                    <h6>Account details</h6>
+                </a>
+                <a href="#">
+                    <h6>Orders</h6>
+                </a>
+                <a href="#">
+                    <h6>Downloads</h6>
+                </a>
+                <a href="#">
+                    <h6>Addresses</h6>
+                </a>
+            </div>
+            <div class="col-sm-5 col-11 footer-right mt-sm-0 mt-5">
+                <h4>GET 20% OFF COUPON</h4>
+                <h6>Subscribe our newsletter and get discount 20% off</h6>
+                <form action="#">
+                    <div class="footer-email d-flex">
+                        <input type="email" class="form-control email-input" placeholder="Enter your email" required>
+                        <button class="thm-btn subscribe-btn" type="submit">
+                            <p>Subscribe</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+    <!------------- Modal Form ------------>
+    <!-- Login Popup -->
+    <div class="modal fade show" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="row modal-content pop-modal">
+                <div class="col-12 modal-header text-center sec-hedding popup-heading justify-content-center mb-0">
+                    <h2 class="modal-title fw-bold" id="exampleModalLabel">Login</h2>
+                </div>
+
+
+                <form action="#">
+                    <div class="modal-body">
+                        <div class="col-12 pop-form">
+                            <label for="validationDefault01" class="form-label">
+                                <h5>Name</h5>
+                            </label>
+
+                            <div class="form-input popup-input">
+                                <img src="images/user-g-icon.svg" alt="">
+                                <input type="text" class="form-control pop-control" id="validationDefault01"
+                                    placeholder="Enter Your First Name" autocomplete="off" required>
+                            </div>
+                        </div>
+
+                        <div class="col-12 pop-form">
+                            <label for="validationDefault02" class="form-label">
+                                <h5>Password</h5>
+                            </label>
+
+                            <div class="form-input popup-input">
+                                <img src="images/password-icon.svg" alt="" class="mt-0">
+                                <input type="password" class="form-control pop-control" id="validationDefault02"
+                                    placeholder="Enter your password" autocomplete="off" required>
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex align-items-center justify-content-between pop-remember">
+                            <div class="form-check">
+                                <input class="form-check-input pop-form-chk" type="checkbox" value=""
+                                    id="flexCheckDefault-p1">
+                                <label class="form-check-label pop-form-label" for="flexCheckDefault-p1">
+                                    Remember me
+                                </label>
+                            </div>
+
+                            <div class="forgot text-end">
+                                <a href="#" onclick="showpopup('emailVerify','block');">Forgot
+                                    Password?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <div class="col-12 text-center">
+                            <button class="thm-btn pop-btn m-auto" type="submit">
+                                <h4>Log in</h4>
+                            </button>
+                        </div>
+                        <div class="col-12 pop-member text-center">
+                            <a href="#" onclick="showpopup('register','block');">Not a member?
+                                <span>Register</span></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Register popup -->
+    <div class="modal fade show" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="row modal-content pop-modal register-form">
+                <div class="col-12 modal-header text-center sec-hedding popup-heading justify-content-center mb-0">
+                    <h2 class="modal-title fw-bold" id="exampleModalLabel">Register</h2>
+                </div>
+
+
+                <form action="#">
+                    <div class="modal-body">
+                        <div class="col-12 pop-form">
+                            <label for="validationDefault03" class="form-label">
+                                <h5>Email</h5>
+                            </label>
+                            <div class="form-input popup-input pop-email">
+                                <img src="images/email-g-icon.svg" alt="">
+                                <input type="email" class="form-control pop-control" id="validationDefault03"
+                                    placeholder="Enter Your Email address" autocomplete="off" required>
+                            </div>
+                        </div>
+
+                        <div class="col-12 pop-form">
+                            <label for="validationDefault04" class="form-label">
+                                <h5>Password</h5>
+                            </label>
+
+                            <div class="form-input popup-input">
+                                <img src="images/password-icon.svg" alt="" class="mt-0">
+                                <input type="password" class="form-control pop-control" id="validationDefault04"
+                                    placeholder="Enter your password" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer pop-register">
+                        <div class="col-12 text-center">
+                            <button class="thm-btn pop-btn m-auto">
+                                <h4>Register</h4>
+                            </button>
+                        </div>
+                        <div class="col-12 pop-member text-center">
+                            <a href="#" onclick="showpopup('login','block');">Already a
+                                member?<span> Login</span></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Reset Password popup -->
+    <div class="modal fade show" id="emailVerify" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="row modal-content pop-modal reset-password-email-verify">
+                <div class="col-12 modal-header text-center sec-hedding popup-heading justify-content-center mb-0">
+                    <h2 class="modal-title fw-bold" id="exampleModalLabel">Reset Password</h2>
+                </div>
+
+
+                <form action="#">
+                    <div class="modal-body">
+
+                        <div class="col-12 pop-form">
+
+                            <div class="popup-input pop-reset d-flex">
+                                <img src="images/password-icon.svg" alt="">
+                                <span>
+                                    Enter your email address and we,ll send you a link to reset
+                                    your password.
+                                </span>
+                            </div>
+                            <P class="reset-border"></P>
+                        </div>
+
+                        <div class="col-12 pop-form">
+                            <label for="validationDefault05" class="form-label">
+                                <h5>Email Address</h5>
+                            </label>
+                            <div class="form-input popup-input pop-email">
+                                <img src="images/email-g-icon.svg" alt="">
+                                <input type="email" class="form-control pop-control" id="validationDefault05"
+                                    placeholder="Enter Your Email address" autocomplete="off" required>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer reset-footer">
+                        <div class="col-12 text-center">
+                            <button class="thm-btn pop-btn m-auto" type="submit"
+                                onclick="showpopup('resetPassword','block');">
+                                <h4>Reset Password</h4>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Reset Password popup -->
+    <div class="modal fade show" id="resetPassword" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="row modal-content pop-modal reset-password-form">
+                <div class="col-12 modal-header text-center sec-hedding popup-heading justify-content-center mb-0">
+                    <h2 class="modal-title fw-bold" id="exampleModalLabel">Reset Password</h2>
+                </div>
+
+
+                <form action="#">
+                    <div class="modal-body">
+
+                        <div class="col-12 pop-form">
+                            <label for="validationDefault-reset1" class="form-label">
+                                <h5>New Password</h5>
+                            </label>
+
+                            <div class="form-input popup-input pop-pass-eye">
+                                <img src="images/password-icon.svg" alt="" class="mt-0">
+                                <input type="password" class="form-control pop-control" id="validationDefault-reset1"
+                                    placeholder="Enter password" autocomplete="off" required>
+
+                                <img src="images/passwors-eye.svg" alt="" class="pass-eye" id="show-pass"
+                                    onclick="showpassword()">
+                            </div>
+                        </div>
+
+                        <div class="col-12 pop-form">
+                            <label for="validationDefault06" class="form-label">
+                                <h5>Confirm Password</h5>
+                            </label>
+
+                            <div class="form-input popup-input">
+                                <img src="images/password-icon.svg" alt="" class="mt-0">
+                                <input type="password" class="form-control pop-control" id="validationDefault06"
+                                    placeholder="Confirm Pasaword" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer reset-footer">
+                        <div class="col-12 text-center">
+                            <button class="thm-btn pop-btn m-auto" type="submit">
+                                <h4>Register</h4>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery-3.6.0 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Price Range Slider -->
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- Custom.js -->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

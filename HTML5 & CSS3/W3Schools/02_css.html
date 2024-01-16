@@ -1,0 +1,302 @@
+<!-- CSS stands for Cascading Style Sheets. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--font-family    font-size    color
+        background-color     background-image
+        text-align    text-decoration
+        padding    margin 
+        border
+        display -->
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            /* background-color: powderblue; */
+            background-image: url("photo/3.jpg");
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position-x: 50%;
+        }
+
+        h1 {
+            color: lightgreen;
+            font-family: verdana;
+            font-size: 3vw;
+            text-align: center;
+            background-color: darkblue;
+            display: block;
+            padding: 2vw;
+            margin: 0px;
+        }
+
+        .class {
+            color: rgb(255, 255, 255);
+            font-family: courier;
+            font-size: 180%;
+            border: 5px outset rgb(7, 0, 0);
+            border-radius: 0px;
+            padding: 10px;
+            margin: 0px;
+            text-align: center;
+            background-color: lightslategrey;
+        }
+
+        .W1 a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            background-color: #5f5f5f;
+            border: 2px #5f5f5f solid;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 20px;
+            overflow-x: auto;
+        }
+
+        /* a:link {  } */
+        /* a:visited {  } */
+
+        a:hover {
+            color: rgba(96, 235, 96, 0.884);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: none;
+            text-decoration: underline;
+        }
+
+        #C4 {
+            font-family: Potta One;
+            color: rgb(0, 0, 0);
+            background-color: paleturquoise;
+            padding: 10px;
+            padding-left: 10%;
+        }
+
+        .ch4 {
+            border: 5px outset dodgerblue;
+            border-radius: 10px;
+            background-color: pink;
+        }
+
+        .W1 {
+            float: left;
+            display: block;
+            padding-left: 4%;
+            width: 20%;
+            text-align: center;
+        }
+
+        .W2 {
+            overflow: auto;
+            margin: 2.5%;
+        }
+
+
+        .table {
+            font-family: potta one;
+            border: 5px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table th {
+            width: 25%;
+            height: 60px;
+            background-color: whitesmoke;
+        }
+
+        .table td {
+            text-align: center;
+            width: 25%;
+        }
+
+        .table td a {
+            padding: 20px;
+            color: white;
+            background-color: #333333;
+            display: block;
+        }
+
+        .table td a:hover {
+            background-color: #111111;
+            color: white;
+        }
+
+        .img1 {
+            background-color: teal;
+            margin-bottom: -4px;
+        }
+
+        .a1 {
+            display: block;
+            margin: 0 43%;
+        }
+
+        .img1 img {
+            display: block;
+            width: 100%;
+            border: 5px outset rgba(189, 139, 139, 0.568);
+        }
+
+        .W3 {
+            border: 7px rgb(219, 86, 153) double;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: potta one;
+            background-image: url('photo/4.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position-x: 50%;
+        }
+
+        .W3 button {
+            font-size: 20px;
+            border-radius: 10px;
+            width: 100px;
+            border: 3px groove black;
+            margin: 5px;
+            margin-left: 10%;
+            cursor: crosshair;
+        }
+
+        .W3 a {
+            margin: 15px;
+            margin-left: 10%;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+        }
+
+        img.img {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1%;
+            border: 10px outset rgb(186, 233, 17);
+            border-radius: 15px;
+        }
+
+        .t2 {
+            width: 100%;
+            margin-top: 3%;
+            border-top: 10px groove rgb(12, 0, 24);
+            padding-top: 1%;
+            background-color: royalblue;
+        }
+
+        .t2 th {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>This is a heading</h1>
+    <div class="class">
+        <p>This is a paragraph.</p>
+    </div><br>
+
+    <div class="ch4">
+        <h2 id="C4"> #Chapter 4</h2>
+
+        <div class="W2">
+            <ul>
+                <li class="W1"><a href="https://www.w3schools.com/" target="_self">Visit W3Schools! _self</a></li>
+                <li class="W1"><a href="https://www.w3schools.com/" target="_new">Visit W3Schools! _blank</a></li>
+                <li class="W1"><a href="https://www.w3schools.com/" target="_parent">Visit W3Schools! _parent</a></li>
+                <li class="W1"><a href="https://www.w3schools.com/" target="_top">Visit W3Schools! _top</a></li>
+            </ul>
+        </div>
+
+    </div><br>
+
+    <table class="table">
+        <tr class="r1">
+            <th colspan="2" style="border-left: 5px solid black;">
+                <h2>Absolute URLs</h2>
+            </th>
+            <th colspan="2" style="border-left: 5px solid black;">
+                <h2>Relative URLs</h2>
+            </th>
+        </tr>
+        <tr class="r2">
+            <td><a href="https://www.w3.org/">W3C</a></td>
+            <td><a href="https://www.google.com/">Google</a></td>
+            <td><a href="html_images.asp">HTML Images</a></td>
+            <td><a href="/css/default.asp">CSS Tutorial</a></td>
+        </tr>
+    </table><br>
+
+    <div class="img1"><a href="default.asp" class="a1">
+            <img src="jaimin.png" alt="HTML tutorial">
+        </a>
+    </div><br><br>
+
+    <div class="W3">
+        <a href="mailto:jaiminmalviya56.jm@gmail.com">Send email</a><br>
+
+        <button onclick="document.location='https://www.google.com'">Google</button><br>
+
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a><br>
+
+        <a href="#C4">Jump to Chapter 4</a><br>
+        <a href="01_index.html#1" target="_blank">Chapter 1</a>
+    </div>
+
+    <!-- The width and height attributes always define the width and height of the image in pixels. -->
+    <div class="C10">
+        <table class="t2">
+            <tr>
+                <th>
+                    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" height="350" width="400"
+                        style="margin: 2%;">
+
+                    <map name="workmap">
+                        <area shape="rect" title="computer" coords="33,43,270,320" alt="Computer" href="computer.htm"
+                            onclick="myFunction()">
+                        <area shape="rect" title="phone" coords="290,155,333,230" alt="Phone" href="phone.htm">
+                        <area shape="circle" title="coffee" coords="337,277,45" alt="Coffee" href="coffee.htm">
+                    </map>
+
+                    <script>
+                        function myFunction() {
+                            alert("You clicked the coffee cup!");
+                        }
+                    </script>
+                </th>
+                <th>
+
+                    <picture>
+                        <source class="img" media="(max-width: 100px)" srcset="workplace.jpg">
+                        <source class="img" media="(max-width: 1700px)" srcset="jaimin.png" alt="Beatles">
+                        <img class="img" src="mac.jpg" alt="Beatles">
+                    </picture>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <!-- Always specify an <img> element as the last child element of the <picture> element. The <img> element 
+    is used by browsers that do not support the <picture> element, or if none of the <source> tags match. -->
+
+
+</body>
+
+</html>

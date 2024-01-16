@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14-Invoices</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Date CSS -->
+    <link rel="stylesheet" href="css/daterangepicker.css">
+
+    <!-- Date -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/common-style.css" />
+    <link rel="stylesheet" href="css/14-Invoices.css" />
+
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+</head>
+
+<body>
+
+    <div class="main-div">
+        <div class="row">
+
+            <!-- Navigation Start -->
+            <div class="col-2">
+                <div class="nav-bg">
+                    <div class="logo-main">
+                        <img src="images/logo.svg" alt="" />
+                    </div>
+
+                    <!-- Navigation Item -->
+                    <div class="nav-items-main">
+                        <div class="single-nav-item">
+                            <a href="10-Dashboard.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-1.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Dashboard</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="13-Leads.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-2.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Leads</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="20-Quotations.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-3.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Quotations</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item a-nav">
+                            <a href="14-Invoices.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-4.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Invoices</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="21-Commisions.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-5.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Commissions</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="16-Projects.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-6.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Projects</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="15-Emails.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-7.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Emails</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="#">
+                                <div class="nav-img">
+                                    <img src="images/nav-8.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Reports</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="11-Users.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-9.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Users</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="17-Setting.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-10.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Settings</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="18-My-Account.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-11.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>My Account</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="19-Notification.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-12.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Notifications</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Navigation End -->
+
+            <!-- Body Section Start -->
+            <div class="col-10 section-main">
+                <div class="row">
+
+                    <!-- Data Section Start-->
+                    <div class="col-xl-8 data-section">
+                        <div class="row">
+                            <div class="col-6">
+                            </div>
+                        </div>
+
+                        <!-- Page Heading -->
+                        <div class="page-main-h">
+                            <span>Invoices</span>
+                            <div class="page-path">
+                                <span><img src="images/sec-path.svg" alt=""></span>
+                                <span><a href="16-projects.html" style="color: #000;"></a></span>
+                                <span><img src="images/angle-right.svg" alt=""></span>
+                                <span>Invoices</span>
+                            </div>
+                        </div>
+
+                        <!-- Section 01 -->
+                        <div class="row data-section-1">
+
+                            <!-- Paid   Invoice -->
+                            <div class="col-3 data-box">
+                                <div class="row text-center">
+                                    <div class="col-12 my-3">
+                                        <h1 class="fir-box all-box">175</h1>
+                                    </div>
+                                    <div class="col-12 total">
+                                        <h4>TOTAL</h4>
+                                        <p> Paid</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Unpaid Invoice -->
+                            <div class="col-3 data-box">
+                                <div class="row text-center">
+                                    <div class="col-12 my-3">
+                                        <h1 class="sec-box all-box">175</h1>
+                                    </div>
+                                    <div class="col-12 total">
+                                        <h4>TOTAL</h4>
+                                        <p>Unpaid</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Due Invoice -->
+                            <div class="col-3 data-box">
+                                <div class="row text-center">
+                                    <div class="col-12 my-3">
+                                        <h1 class="third-box all-box">175</h1>
+                                    </div>
+                                    <div class="col-12 total">
+                                        <h4>TOTAL</h4>
+                                        <p> Due</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Draft Invoices -->
+                            <div class="col-3 data-box">
+                                <div class="row text-center">
+                                    <div class="col-12 my-3">
+                                        <h1 class="forth-box all-box">175</h1>
+                                    </div>
+                                    <div class="col-12 total">
+                                        <h4>TOTAL</h4>
+                                        <p>Draft</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 02 -->
+                        <div class="row mt-3 pe-4" style="display: flex; align-items: center;">
+
+                            <!-- Search bar -->
+                            <div class="col-6 search-main">
+                                <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <!-- Status -->
+                            <div class="col-6 d-flex text-end">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Status</option>
+                                    <option value="2">Status 1</option>
+                                    <option value="3">Status 2</option>
+                                </select>
+
+                                <!-- Calender -->
+                                <div class="col-6">
+                                    <div class="row date-menu">
+                                        <div class="col-auto  p-0">
+                                            <input type="text" id="config-demo" class="form-control">
+                                            <img src="images/calendar.svg" class="cal-img" alt="" />
+                                            <a href="#" class="arrow-down-icon">
+                                                <img src="images/arrow-down.svg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Section 03 -->
+                        <div class="row mt-4">
+
+                            <!-- Invoice List Header -->
+                            <div class="col-6">
+                                <strong class="fs-4">Invoices List</strong>
+                            </div>
+                            <div class="col-6 text-end pe-5">
+                                <a href="#" class="invoice-btn" id="open-pop">+ Add New Invoice</a>
+                            </div>
+                        </div>
+
+                        <!-- Table Invoice -->
+                        <div class="row">
+                            <div class="col-12 pe-4">
+
+                                <!-- table-main -->
+                                <table class="table table-main">
+                                    <thead>
+                                        <tr class="tab-h">
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Lead ID</th>
+                                            <th scope="col">Due Date</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <!-- List 01 -->
+                                        <tr class="tab-field" id="open-pop"
+                                            onmousedown="window.location='14-invoice-2.html';">
+                                            <td>
+                                                <div class="part-2">
+                                                    <div class="user-logo">
+                                                        <img src="images/user-logo.svg" alt="">
+                                                    </div>
+                                                    <div class="user-name">
+                                                        <span>Steven Smith</span><br>
+                                                        <span>315462
+                                                            <img src="images/invoice-i.svg" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="vertical-align: middle;">
+                                                <span>315462</span>
+                                            </td>
+
+                                            <td class="mt-3" style="vertical-align: middle;"><span>09/01/2021</span>
+                                            </td>
+
+                                            <td class="mt-3" style="vertical-align: middle;"><span>$250</span>
+                                            </td>
+
+                                            <td style="vertical-align: middle;"><a href=" #" class="unpaid-btn">
+                                                    New</a></td>
+                                            <td style="vertical-align: middle;">
+                                                <span>
+                                                    <a href="#"> <img src="images/view.svg" alt=""></a>&nbsp;
+
+                                                    <a href="#"><img src="images/download.svg" alt=""></a>&nbsp;
+
+                                                    <a href="#" style="color: #000;"><i
+                                                            class="fas fa-envelope-open-text"></i></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        <!-- List 02 -->
+                                        <tr class="tab-field">
+                                            <td>
+                                                <div class="part-2">
+                                                    <div class="user-logo">
+                                                        <img src="images/user-logo.svg" alt="">
+                                                    </div>
+                                                    <div class="user-name">
+                                                        <span>Steven Smith</span><br>
+                                                        <span>315462
+                                                            <img src="images/invoice-i.svg" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="vertical-align: middle;">
+                                                <span>315462</span>
+                                            </td>
+                                            <td class="mt-3" style="vertical-align: middle;"><span>09/01/2021</span>
+                                            </td>
+                                            <td class="mt-3" style="vertical-align: middle;"><span>$250</span>
+                                            </td>
+                                            <td style="vertical-align: middle;"><a href="#" class="paid-btn">paid</a>
+                                            </td>
+                                            <td style="vertical-align: middle;">
+                                                <span>
+                                                    <a href="#"> <img src="images/view.svg" alt=""></a>&nbsp;
+
+                                                    <a href="#"><img src="images/download.svg" alt=""></a>&nbsp;
+
+                                                    <a href="#" style="color: #000;"><i
+                                                            class="fas fa-envelope-open-text"></i></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        <!-- List 03 -->
+                                        <tr class="tab-field">
+                                            <td>
+                                                <div class="part-2">
+                                                    <div class="user-logo">
+                                                        <img src="images/user-logo.svg" alt="">
+                                                    </div>
+                                                    <div class="user-name">
+                                                        <span>Steven Smith</span><br>
+                                                        <span>315462
+                                                            <img src="images/invoice-i.svg" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="vertical-align: middle;">
+                                                <span>315462</span>
+                                            </td>
+                                            <td class="mt-3" style="vertical-align: middle;"><span>09/01/2021</span>
+                                            </td>
+                                            <td class="mt-3" style="vertical-align: middle;"><span>$250</span>
+                                            </td>
+                                            <td style="vertical-align: middle;"><a href="#"
+                                                    class="Overdue-btn">Overdue</a></td>
+                                            <td style="vertical-align: middle;">
+                                                <span>
+                                                    <a href="#"> <img src="images/view.svg" alt=""></a>&nbsp;
+
+                                                    <a href="#"><img src="images/download.svg" alt=""></a>&nbsp;
+
+                                                    <a href="#" style="color: #000;"><i
+                                                            class="fas fa-envelope-open-text"></i></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <!--   Pagination -->
+                        <div class="row mt-2 mb-5">
+
+                            <!-- Pagination button -->
+                            <div class="col-6">
+                                <a href="#" class="slide-btn"> <img src="images/pagination-left-2.svg" alt=""></a>
+                                <a href="#" class="slide-btn0"><img src="images/pagonation-left-1.svg" alt=""></a>
+                                <a href="#" class="slide-btn1">1</a>
+                                <a href="#" class="slide-btn2">2</a>
+                                <a href="#" class="slide-btn2">-</a>
+                                <a href="#" class="slide-btn0"><img src="images/pagonation-right-1.svg" alt=""></a>
+                                <a href="#" class="slide-btn"><img src="images/pagination-right-2.svg" alt=""></a>
+                            </div>
+
+                            <!-- Pagination Dropdown -->
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="dropdown">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <span class="mx-2 pages-num">Showing 1 - 25 of 30</span>
+                            </div>
+
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <span class="copyright">Copyright 2021. All rights are reserved.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Data Section End-->
+
+                    <!-- User Section Start -->
+                    <div class="col-xl-4 user-main">
+
+                        <!-- User Id -->
+                        <div class="user-cont">
+                            <div class="part-2">
+                                <div class="bell" id="open-user">
+                                    <img src="images/bell.svg" alt="" />
+                                    <span>3</span>
+                                </div>
+                                <div class="user-logo">
+                                    <img src="images/user-logo.svg" alt="" />
+                                </div>
+                                <div class="user-name">
+                                    <span>MANUFACTURER</span>
+                                    <a href="#">shikha@doitallsteel.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Page -->
+                        <div class="sec-cont-main">
+                            <div class="row">
+                                <div class="col-8 fv-main">
+                                    <span style="color: #FF9D00; font-weight: 900;">DUE THIS WEEK</span>
+                                </div>
+                                <div class="col-4 text-end week ">
+                                    <span>20</span>
+                                </div>
+                            </div>
+
+                            <!-- Invoice Id 01 -->
+                            <div class="row proj-main">
+                                <div class="row">
+                                    <div class="col-6 invoice-id">
+                                        <strong>Invoice ID</strong>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class="overdue">OVERDUE</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span
+                                            class="overdue-detail">Project&nbsp;Information&nbsp;Total&nbsp;Due&nbsp;Invoices&nbsp;
+                                            Amount</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <strong class="overdue-amount">$2,500,000</strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <span class="date">DATE</span><br>
+                                        <strong class="dates">09/10/2021</strong>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <span class="date">DUE DATE</span><br>
+                                        <strong class="dates">09/10/2021</strong>
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        <span class="date"> CUSTOMER&nbsp;NAME</span><br>
+                                        <strong class="dates">Do It All Steel</atrong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Invoice Id 02 -->
+                            <div class="row proj-main">
+                                <div class="row">
+                                    <div class="col-6  invoice-id">
+                                        <strong>Invoice ID</strong>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class="overdue">OVERDUE</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span
+                                            class="overdue-detail">Project&nbsp;Information&nbsp;Total&nbsp;Due&nbsp;Invoices&nbsp;
+                                            Amount</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <strong class="overdue-amount">$2,500,000</strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <span class="date">DATE</span><br>
+                                        <strong class="dates">09/10/2021</strong>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <span class="date">DUE DATE</span><br>
+                                        <strong class="dates">09/10/2021</strong>
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        <span class="date"> CUSTOMER&nbsp;NAME</span><br>
+                                        <strong class="dates">Do It All Steel</atrong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Invoice Id 03 -->
+                            <div class="row proj-main">
+                                <div class="row">
+                                    <div class="col-6 invoice-id">
+                                        <strong>Invoice ID</strong>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class="overdue">OVERDUE</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span
+                                            class="overdue-detail">Project&nbsp;Information&nbsp;Total&nbsp;Due&nbsp;Invoices&nbsp;
+                                            Amount</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <strong class="overdue-amount">$2,500,000</strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <span class="date">DATE</span><br>
+                                        <strong class="dates">09/10/2021</strong>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <span class="date">DUE DATE</span><br>
+                                        <strong class="dates">09/10/2021</strong>
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        <span class="date"> CUSTOMER&nbsp;NAME</span><br>
+                                        <strong class="dates">Do It All Steel</atrong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- User page Next id btn -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="#" class="angle-btn"><img src="images/angle-left-White.svg" alt=""></a>
+                                    <a href="#" class="angle-btn"><img src="images/angle-right-White.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- User Section End -->
+
+                </div>
+            </div>
+            <!-- Body Section End -->
+
+        </div>
+    </div>
+
+
+    <!-- Add Invoice Pop -->
+    <div class="pop-main ">
+
+        <!-- Popup Header -->
+        <div class="edit-bg p-3">
+            <div class="row ms-2 pt-3">
+                <div class="col-6">
+                    <strong class="an-invo">Add New Invoices</strong>
+                </div>
+                <div class="col-6 text-end">
+                    <a href="#" style="color: #000;" id="close-pop"> <i class="fas fa-times  fs-4"></i></a>
+                </div>
+            </div>
+
+            <!-- Proposal -->
+            <div class="row mt-2 ms-2">
+                <div class="col-6">
+                    <div class="dropdown ">
+                        <label class="label">Proposal</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value=""></option>
+                            <option value="1">Proposal 1</option>
+                            <option value="2">proposal 2</option>
+                            <option value="3">proposal 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label class="label">Due Date</label>
+                    <div class="col-auto">
+                        <div class="row date-menu">
+                            <input type="date" class="p-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- User Data -->
+            <div class="row mt-4 ms-2">
+                <div class="col-4">
+                    <div class="part-2">
+                        <div class="user-logo">
+                            <img src="images/user-logo.svg" alt="" height="30px">
+                        </div>
+                        <div class="user-name">
+                            <span>MANUFACTURER</span>
+                            <a href="#">shikha@doitallsteel.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <span class="pop-detail">Total Proposal Cost</span><br>
+                    <strong>USD 625,000</strong>
+                </div>
+                <div class="col-4 text-end">
+                    <span class="pop-detail">Total Invoices Generated</span><br>
+                    <strong>USD 187,500</strong>
+                </div>
+            </div>
+
+
+            <!-- Invoices -->
+            <div class="row mt-4 ms-2">
+                <!-- First Invoice -->
+                <div class="col-3">
+                    <div class="invoices-box">
+                        <div class="row">
+                            <div class="col-12 text-end">
+                                <i class="fas fa-check-circle" style="color: #41AD49;"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="fr-invoice">FIRST INVOICE</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 usd">
+                                <strong style="font-size: 35px;"> 30%</strong>
+                                <span> / USD 187,500</span>
+                                <p>Deposit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secound Invoices -->
+                <div class="col-3">
+                    <div class="invoices-box pt-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="fr-invoice">SECOUND INVOICE</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 usd">
+                                <strong style="font-size: 35px;"> 30%</strong>
+                                <span> / USD 187,500</span>
+                                <p>Drawing Ready</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Invoices -->
+                <div class="col-3">
+                    <div class="invoices-box pt-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="fr-invoice">THIRD INVOICE</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 usd">
+                                <strong style="font-size: 35px;"> 40%</strong>
+                                <span> / USD 250,000</span>
+                                <p>Final Deposit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Generet Button -->
+            <div class="row text-center my-5">
+                <div class="col-12">
+                    <a href="#" class="save-btn ms-2">Generate</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Navigation JS -->
+    <script>
+
+        // Navigation Bar Toggle
+        let score = 0;
+        $("#open-user").on("click", function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $(".sec-cont-main").toggle(
+                "slide",
+                { direction: "right" },
+                500,
+                score++,
+            );
+            $(".user-cont").toggleClass(
+                "add-bg",
+                { direction: "right" },
+                500,
+            );
+        });
+
+        $('.data-section').scroll(function () {
+            var sticky = $('.user-main'),
+                scroll = $('.data-section').scrollTop();
+
+            if (scroll >= 100) {
+                if (score % 2 == 0) sticky.addClass('fixed');
+                else sticky.removeClass('fixed');
+            }
+            else sticky.removeClass('fixed');
+        });
+
+        // Popup Modal
+        $('.pop-main').hide();
+
+        $('#open-pop').click(function () {
+            $('.pop-main').fadeIn();
+        });
+
+        $('#close-pop').click(function () {
+            $('.pop-main').fadeOut();
+        });
+
+    </script>
+
+    <script src="Js/daterangepicker.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#config-text').keyup(function () {
+                eval($(this).val());
+            });
+
+            $('.configurator input, .configurator select').change(function () {
+                updateConfig();
+            });
+
+            $('.demo i').click(function () {
+                $(this).parent().find('input').click();
+            });
+
+            $('#startDate').daterangepicker({
+                singleDatePicker: true,
+                startDate: moment().subtract(6, 'days')
+            });
+
+            $('#endDate').daterangepicker({
+                singleDatePicker: true,
+                startDate: moment()
+            });
+
+            updateConfig();
+
+            function updateConfig() {
+                var options = {};
+
+                if ($('#autoApply').is(':checked'))
+                    options.autoApply = true;
+
+                if ($('#dateLimit').is(':checked'))
+                    options.dateLimit = { days: 7 };
+
+                if ($('#ranges').is(':checked')) {
+                    options.ranges = {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    };
+                }
+
+                if ($('#locale').is(':checked')) {
+                    $('#rtl-wrap').show();
+                    options.locale = {
+                        direction: $('#rtl').is(':checked') ? 'rtl' : 'ltr',
+                        format: 'MM/DD/YYYY HH:mm',
+                        separator: ' - ',
+                        applyLabel: 'Apply',
+                        cancelLabel: 'Cancel',
+                        fromLabel: 'From',
+                        toLabel: 'To',
+                        customRangeLabel: 'Custom',
+                        daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                        monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                        firstDay: 1
+                    };
+                } else {
+                    $('#rtl-wrap').hide();
+                }
+
+                $('#config-text').val("$('#demo').daterangepicker(" + JSON.stringify(options, null, '    ') + ", function(start, end, label) {\n  console.log(\"New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')\");\n});");
+
+                $('#config-demo').daterangepicker(options, function (start, end, label) { console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')'); }).click();;
+
+                $('#config-demo2').daterangepicker(options, function (start, end, label) { console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')'); }).click();;
+
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

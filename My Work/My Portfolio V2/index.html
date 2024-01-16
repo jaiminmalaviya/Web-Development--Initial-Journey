@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!------------ Bootstrap CSS ------------>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!------------ Animation SASS ------------>
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="CSS/animation.css">
+
+
+    <!------------ Custom CSS ------------>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!------------ Media Query ------------>
+    <link rel="stylesheet" href="CSS/media-query.css">
+</head>
+
+<body>
+
+    <header class="header d-flex align-items-center fixed-top">
+        <nav class="navbar navbar-expand-md w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand fontalicious" href="/index.html">JM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"><span class="d-block d-md-inline">01.</span>
+                                    About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="d-block d-md-inline">02.</span> Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="d-block d-md-inline">03.</span> Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="d-block d-md-inline">04.</span> Contact</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn" href="/Resume.pdf" target="_blank">Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="left">
+        <ul>
+            <li><a href="https://github.com/jaiminmalaviya" aria-label="GitHub" title="GitHub" target="_blank"
+                    rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-github">
+                        <title>GitHub</title>
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg></a></li>
+            <li><a href="https://www.instagram.com/jaimin._02/" aria-label="Instagram" title="Instagram" target="_blank"
+                    rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-instagram">
+                        <title>Instagram</title>
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg></a></li>
+            <li><a href="https://twitter.com/JaiminMalaviya2" aria-label="Twitter" title="Twitter" target="_blank"
+                    rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-twitter">
+                        <title>Twitter</title>
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                        </path>
+                    </svg></a></li>
+            <li><a href="https://www.linkedin.com/in/jaimin-malaviya-94b543218/" title="Linkedin" aria-label="Linkedin"
+                    target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-linkedin">
+                        <title>LinkedIn</title>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                        </path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg></a></li>
+            <li><a href="https://www.facebook.com/jaimin.malaviya.184/" aria-label="Facebook" title="Facebook"
+                    target="_blank" rel="noreferrer"><svg class="fb-icon" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50" style=" fill:#8892b0;">
+                        <path
+                            d="M 30.140625 2 C 26.870375 2 24.045399 2.9969388 22.0625 4.9667969 C 20.079601 6.936655 19 9.823825 19 13.367188 L 19 18 L 13 18 A 1.0001 1.0001 0 0 0 12 19 L 12 27 A 1.0001 1.0001 0 0 0 13 28 L 19 28 L 19 47 A 1.0001 1.0001 0 0 0 20 48 L 28 48 A 1.0001 1.0001 0 0 0 29 47 L 29 28 L 36 28 A 1.0001 1.0001 0 0 0 36.992188 27.125 L 37.992188 19.125 A 1.0001 1.0001 0 0 0 37 18 L 29 18 L 29 14 C 29 12.883334 29.883334 12 31 12 L 37 12 A 1.0001 1.0001 0 0 0 38 11 L 38 3.3457031 A 1.0001 1.0001 0 0 0 37.130859 2.3554688 C 36.247185 2.2382213 33.057174 2 30.140625 2 z M 30.140625 4 C 32.578477 4 34.935105 4.195047 36 4.2949219 L 36 10 L 31 10 C 28.802666 10 27 11.802666 27 14 L 27 19 A 1.0001 1.0001 0 0 0 28 20 L 35.867188 20 L 35.117188 26 L 28 26 A 1.0001 1.0001 0 0 0 27 27 L 27 46 L 21 46 L 21 27 A 1.0001 1.0001 0 0 0 20 26 L 14 26 L 14 20 L 20 20 A 1.0001 1.0001 0 0 0 21 19 L 21 13.367188 C 21 10.22255 21.920305 7.9269075 23.472656 6.3847656 C 25.025007 4.8426237 27.269875 4 30.140625 4 z">
+                        </path>
+                    </svg></a></li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <div class="email-link">
+            <a href="mailto:jaiminmalviya56.jm@gmail.com">jaiminmalviya56.jm@gmail.com</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <main class="main">
+
+            <section class="home">
+                <div>
+                    <h1 class="cssanimation leWaterWave sequence">Hi, my name is</h1>
+                </div>
+                <div>
+                    <h2 class=" cssanimation leWaterWave sequence">Jaimin Malaviya.</h2>
+                </div>
+                <div>
+                    <h3 class="cssanimation leWaterWave sequence">I build things for the web.</h1>
+                </div>
+                <div>
+                    <h4 class="animated intensifies cssanimation leWaterWave sequence">Software Engineer / Front End
+                        Developer</h4>
+                </div>
+                <a href="#" class="contact-btn">
+                    <div>
+                        <span class="bg"></span>
+                        <span class="text">Contact me!</span>
+                    </div>
+                </a>
+            </section>
+
+            <section class="about">
+                <div class="blast-heading home-page">
+                    <div class="text-zone">
+                        <h1 aria-label="About Me" class="blast-root">
+                            About Me
+                        </h1>
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="about-text">
+                        <p>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that
+                            leads to the success of the overall product. Check out some of my work in the Projects
+                            section.</p>
+                        <p>I also like sharing content related to the stuff that I have learned over the years in Web
+                            Development so it can help other people of the Dev Community. Feel free to Connect or Follow
+                            me on my Linkedin where I
+                            post useful content related
+                            to Web Development and Programming.</p>
+                        <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good
+                            opportunity that matches my
+                            skills and experience then don't hesitate to contact me.</p>
+                    </div>
+                    <!-- <div class="about-pic">
+                        <img src="Image/about-pic.JPG" alt="">
+                    </div> -->
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!------------ Bootstrap JS ------------>
+    <script src="Javascript/bootstrap.min.js"></script>
+
+    <!------------ Animation JS ------------>
+    <script type="text/javascript"
+        src=" https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
+
+    <!------------ Custom JS ------------>
+    <script src="Javascript/script.js"></script>
+</body>
+
+</html>

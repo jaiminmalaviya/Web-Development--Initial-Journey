@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SetTimeOut and ClearTimeOut</title>
+</head>
+
+<body>
+    <div class="container">
+        This is container
+    </div>
+    <br>
+    <hr><br>
+    <div id="time"></div><br>
+    <hr><br>
+    <button onclick="startCount()">Start count!</button>
+    <input type="text" id="txt">
+    <button onclick="stopCount()">Stop count!</button>
+
+</body>
+
+<script>
+    console.log("THis is tut58")
+    // setTimeout --> Alllows us to run the function once after the interval of time
+    // setInterval --> Alllows us to run the function repeatedly after the interval of time
+
+    // setTimeout(function, milliseconds, param1, param2, ...)
+    // setInterval(function, milliseconds, param1, param2, ...)
+
+    function greet(name, byeText) {
+        console.log("Hello Good Morning " + name + " " + byeText);
+    }
+    timeOut = setTimeout(greet, 3000, "Harry", "Take Care");
+    console.log(timeOut);
+
+    // clearTimeout(timeOut);
+    clearTimeout(2);
+
+    setTimeout(function () { greet("harry bhai,", "kem cho") }, 3000);
+    // setTimeout(greet(), 3000); --> Wrong as it is calling the function inside setTimeout
+
+    intervalId = setInterval(greet, 1000, "Harry", "Good Night");
+    clearInterval(intervalId);
+
+    function displayTime() {
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = new Date();
+    }
+    setInterval(displayTime, 1000);
+
+    // Time count
+    var c = 0;
+    var t;
+    var timer_is_on = 0;
+
+    function timedCount() {
+        document.getElementById("txt").value = c;
+        c = c + 1;
+        t = setTimeout(timedCount, 1000);
+    }
+
+    function startCount() {
+        if (!timer_is_on) {
+            timer_is_on = 1;
+            timedCount();
+        }
+    }
+
+    function stopCount() {
+        clearTimeout(t);
+        timer_is_on = 0;
+    }
+
+</script>
+
+</html>

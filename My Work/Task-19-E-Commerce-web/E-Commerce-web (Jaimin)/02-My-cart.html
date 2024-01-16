@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-My Cart</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="row align-items-center justify-content-between spacer-x ">
+            <div class="col-md-auto col-2">
+                <div class="nav-logo">
+                    <a href="#">Logo</a>
+                </div>
+            </div>
+
+            <div class="col-md-auto col-1 order-2 order-md-1">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Our services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">New Arrival</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> Contact us</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+            <div class="col-md-auto offset-5 offset-md-0 col-3 order-1 order-md-2 right-nav">
+                <ul class="d-flex justify-content-end align-items-center">
+                    <li>
+                        <a href="#" class="thm-btn login-btn">Login</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <img src="images/search-icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <img src="images/cart-icon.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Section-01 -->
+    <div class="sec-01">
+        <div class="sec-01-heading head-04 w-100">
+            <h4>My Cart (1)</h4>
+        </div>
+        <div class="my-cart row w-100">
+            <div class="item-img col-3">
+                <img src="images/my-cart-01.png" class="w-100" alt="">
+            </div>
+            <div class="col item-details">
+                <div class="row">
+                    <div class="item-details-01 col-12 col-sm-6">
+                        <h4>Unisex Cotton Neck Hoodie</h4>
+                        <p>Size : XL </p>
+                        <p>Color : Green</p>
+                        <h4>$250</h4>
+                    </div>
+                    <div class="delivery-date col-12 col-sm-6 text-sm-end">
+                        <h5>Delivery by Tue Dec 28/$20</h5>
+                    </div>
+                    <div class="quantity col-12">
+                        <button class="minus-btn" type="button" name="button">
+                            <img src="images/minus.svg" alt="" />
+                        </button>
+                        <input type="text" name="name" value="1">
+                        <button class="plus-btn" type="button" name="button">
+                            <img src="images/plus.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="col-12 d-sm-block d-none">
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate accumsan
+                            venenatis nunc porta vitae ipsum dolor sit amet, consectetur adipiscing elit. Vulputa
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-sm-none d-block mt-5">
+                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate accumsan
+                    venenatis nunc porta vitae ipsum dolor sit amet, consectetur adipiscing elit. Vulputa
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="col-12 delivery-pincode">
+                <div class="pincode-heading">
+                    <h4><img src="images/location-icon.svg" alt="">Delivery to</h4>
+                </div>
+                <form action="#">
+                    <div class="row pincode-form justify-content-between">
+                        <div class="col-sm-5 col-11">
+                            <input type="number" class="form-control" placeholder="Enter your pincode" required>
+                        </div>
+                        <button class="thm-btn place-order-btn mt-sm-0 mt-5" type="submit">
+                            <h4>Place Order</h4>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer-y-01"></div>
+
+    <!-- Section-02 -->
+    <div class="sec-02">
+        <div class="sec-01-heading w-100">
+            <h4>Price Details</h4>
+        </div>
+        <div class="price-details">
+            <div class="price-details-01 w-100">
+                <h5 class="fw-normal">Price (1 item)</h5>
+                <h5 class="text-end">$250</h5>
+            </div>
+            <div class="price-details-02 w-100">
+                <h5 class="fw-normal">Discount</h5>
+                <h5 class="text-end">-$0</h5>
+            </div>
+            <div class="price-details-03 w-100">
+                <h5 class="fw-normal">Delivery Charges</h5>
+                <h5 class="text-end">$40</h5>
+            </div>
+            <div class="price-details-04 w-100">
+                <h4>Total Amount</h4>
+                <h4 class="text-end">$290</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer-y-02"></div>
+
+    <!-- Section-03 -->
+    <footer>
+        <div class="footer-logo ms-5 ms-md-2">
+            <h2>Logo</h2>
+        </div>
+        <div class="footer-section row justify-content-between">
+            <div class="col-sm col-md-3 company-details col-6">
+                <div class="footer-left">
+                    <img src="images/location-w-icon.svg" alt="">
+                    <h6>2972 Westheimer Rd. Santa Ana, Illinois 85486 </h6>
+                </div>
+                <div class="footer-left"><img src="images/phone-w-icon.svg" alt="">
+                    <h6>+91 9988776655</h6>
+                </div>
+                <div class="footer-left"> <img src="images/email-w-icon.svg" alt="">
+                    <h6>debra.holt@example.com</h6>
+                </div>
+            </div>
+            <div class="col-auto footer-nav-link">
+                <a href="#">
+                    <h6>Home</h6>
+                </a>
+                <a href="#">
+                    <h6>Our Service</h6>
+                </a>
+                <a href="#">
+                    <h6>New Arrival</h6>
+                </a>
+                <a href="#">
+                    <h6>Category</h6>
+                </a>
+                <a href="#">
+                    <h6>Contact us</h6>
+                </a>
+            </div>
+            <div class="col-auto footer-user-link">
+                <a href="#">
+                    <h6>Account details</h6>
+                </a>
+                <a href="#">
+                    <h6>Orders</h6>
+                </a>
+                <a href="#">
+                    <h6>Downloads</h6>
+                </a>
+                <a href="#">
+                    <h6>Addresses</h6>
+                </a>
+            </div>
+            <div class="col-sm-5 col-11 footer-right mt-sm-0 mt-5">
+                <h4>GET 20% OFF COUPON</h4>
+                <h6>Subscribe our newsletter and get discount 20% off</h6>
+                <form action="#">
+                    <div class="footer-email d-flex">
+                        <input type="email" class="form-control email-input" placeholder="Enter your email" required>
+                        <button class="thm-btn subscribe-btn" type="submit">
+                            <p>Subscribe</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery-3.6.0 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script>
+        // Navigation bar Toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+        // quantity buttons
+        $('.minus-btn').on('click', function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value > 1) {
+                value = value - 1;
+            } else {
+                value = 0;
+            }
+
+            $input.val(value);
+
+        });
+
+        $('.plus-btn').on('click', function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value < 100) {
+                value = value + 1;
+            } else {
+                value = 100;
+            }
+
+            $input.val(value);
+        });
+    </script>
+
+</body>
+
+</html>

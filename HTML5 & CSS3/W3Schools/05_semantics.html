@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+        .all-browsers {
+            /* margin: 0; */
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .all-browsers>h1,
+        .browser {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .browser {
+            background: white;
+        }
+
+        .browser>h2,
+        .browser>p {
+            margin: 4px;
+            font-size: 90%;
+        }
+
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            margin-top: 10px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <pre><code>
+        x = 5;
+        y = 6;
+        z = x + y;
+    </code></pre> <!-- for defining user input and computer code. -->
+
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+    <hr>
+
+    <p>Message from my computer:</p>
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+    <!-- <samp> element is used to define sample output from a computer program -->
+
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is
+        the vertical height.</p>
+    <hr>
+    <!-- used to define a variable in programming or in a mathematical expression -->
+
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+            conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was
+            founded in 1961.</p>
+    </section>
+
+    <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi
+            Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of
+            WWF.</p>
+    </section>
+    <hr>
+
+    <article class="all-browsers">
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular
+                web browser today!</p>
+        </article>
+        <article class="browser">
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most
+                popular web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced
+                Internet Explorer.</p>
+        </article>
+    </article>
+    <hr>
+
+    <article>
+        <nav>
+            <a href="/html/">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/jquery/">jQuery</a>
+        </nav>
+
+        <header>
+            <h1>What Does WWF Do?</h1>
+            <p>WWF's mission:</p>
+        </header>
+        <p>WWF's mission is to stop the degradation of our planet's natural environment,
+            and build a future in which humans live in harmony with nature.</p>
+
+        <footer>
+            <p>Author: Hege Refsnes</p>
+            <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+        </footer>
+    </article>
+    <hr>
+
+    <aside>
+        <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international
+            pavilions, award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great
+        summer together with my family!</p>
+
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great
+        summer together with my family!</p>
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great
+        summer together with my family!</p>
+    <hr>
+
+    <figure>
+        <img src="mac.jpg" alt="Trulli" width="250">
+        <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+
+
+</body>
+
+</html>

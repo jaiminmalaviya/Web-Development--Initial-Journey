@@ -1,0 +1,871 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap'); */
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v29-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v29-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v29-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v29-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v29-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v29-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v29-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v29-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v29-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v29-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/roboto-v29-latin-500.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v29-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v29-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v29-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v29-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v29-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/roboto-v29-latin-700.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================= popup ==================================== */
+
+.modal-backdrop.show {
+  opacity: 0;
+}
+
+.modal {
+  height: auto;
+  top: 20px;
+  left: 140px;
+}
+
+.modal-content {
+  box-shadow: 0px 3px 6px #00000078;
+  border: none;
+}
+
+.modal-header {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  border: none;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  z-index: 12;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+}
+
+.pop-up-img {
+  background-color: #fc9b9b;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.modal-body > p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* =========================  Navigation Menu  ================================ */
+
+.nav-bg {
+  padding: 30px 36px;
+  background-color: #323b4a;
+  height: 100vh;
+}
+
+.logo-main {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.logo-main > img {
+  width: 100%;
+}
+
+.nav-items-main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-nav-item {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 0.6;
+}
+
+.a-nav {
+  opacity: 1;
+}
+
+.single-nav-item > a {
+  display: block;
+}
+
+.nav-img {
+  background-color: #bf932d;
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.nav-name > span {
+  color: #f3dc53;
+  font-size: 12px;
+}
+
+/*============================== Page Cont Starts ============================*/
+
+.main-div > .row {
+  --bs-gutter-x: 0;
+}
+
+.section-main {
+  padding: 0 30px 0 30px;
+  height: 100vh;
+  overflow-y: scroll;
+  display: block;
+}
+
+.section-main > .row {
+  --bs-gutter-x: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.cl-btn-222 {
+  z-index: 222;
+}
+.cl-btn-0 {
+  z-index: 0;
+}
+
+.clear-btn {
+  padding: 5px 20px;
+  border: 1px solid #d9d9d9;
+  color: #656565;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.clear-btn:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #bf932d;
+  transition: 0.3s;
+}
+
+.page-main-h {
+  margin-top: 40px;
+}
+
+.page-main-h > span {
+  font-size: 25px;
+  font-weight: 700;
+  color: #323b4a;
+}
+
+.page-path > span {
+  color: #323b4a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Section-01 */
+.sec-h > span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+/*============================== data-section ============================= */
+
+.date-menu {
+  height: 30px;
+  padding: 0 0px 0 5px;
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+.date-menu > div {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #d1d1d1;
+}
+
+.date-menu p {
+  color: #656565;
+  font-size: 15px;
+}
+
+.edit-btn {
+  background-color: #f3dc53;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.unpaid-btn {
+  background-color: #fff9d5;
+  color: #f3dc53;
+  padding: 6px 15px;
+  border-radius: 50px;
+}
+
+.unpaid-btn:hover {
+  color: #f3dc53;
+}
+
+.pay-btn {
+  background-color: #f3dc53;
+  padding: 6px 15px;
+  color: #000;
+  border-radius: 50px;
+  display: block;
+  margin-right: 30px;
+}
+
+.pay-btn:hover {
+  color: #000;
+}
+
+.addres {
+  color: #656565;
+}
+
+.addres > p {
+  font-weight: 300;
+}
+
+.qr-code > img {
+  margin-right: 45px;
+}
+
+.client-details {
+  color: #787878;
+}
+
+.agent-details > span {
+  color: #656565;
+}
+
+.agent-details > strong {
+  color: #bf932d;
+}
+
+.sec-invoice {
+  color: #656565;
+  font-weight: normal;
+}
+
+.discription {
+  color: #656565;
+}
+
+.tab-head {
+  font-weight: 700;
+}
+
+.sub-total {
+  font-weight: 500;
+}
+
+.total-amount {
+  font-weight: 900;
+}
+
+.send-btn {
+  background-color: #f3dc53;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: #000;
+}
+
+.send-btn:hover {
+  color: #000;
+}
+
+.fv-main > span {
+  color: #ff9d00;
+  font-weight: 500;
+}
+
+.progres-btn {
+  background-color: #f3dc53;
+  padding: 5px 12px;
+  color: #000;
+  font-size: 12px;
+}
+
+.progres-btn:hover {
+  color: #000;
+}
+
+.quotaion-amount {
+  color: #a7a7a7;
+  font-size: 14px;
+}
+
+.quo-amnt {
+  color: #bf932d;
+}
+
+.deposit {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+.paid-btn {
+  background-color: #ebfaef;
+  color: #65da5f;
+  padding: 8px 18px;
+  border-radius: 50px;
+}
+
+.paid-btn:hover {
+  color: #65da5f;
+}
+
+.date {
+  color: #a7a7a7;
+  font-size: 14px;
+}
+
+.dates {
+  color: #bf932d;
+}
+
+.footer > p {
+  font-size: 20px;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  position: initial;
+  font-size: 14px !important;
+}
+
+/*============================== Page Cont End ============================*/
+
+/*=============================== User Section =============================*/
+
+/* .user-main {
+    height: 100vh;
+  } */
+
+#open-user {
+  pointer-events: none;
+}
+
+.user-cont {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 16px;
+  background-color: #f4f5f6;
+  padding: 10px 16px;
+  z-index: 9999;
+}
+
+.add-bg {
+  background-color: #fff;
+}
+
+.sec-cont-main {
+  background-color: #f4f5f6;
+  /* padding: 10px; */
+  height: 91vh;
+  padding: 10px 16px;
+  overflow: scroll;
+}
+
+.week > .span {
+  font-size: 14px !important;
+  color: #a7a7a7;
+}
+
+.bars {
+  display: flex;
+  justify-content: start;
+}
+
+.bars > a {
+  color: #000;
+  font-size: 20px;
+  display: none;
+}
+
+.part-2 {
+  display: flex;
+  align-items: center;
+}
+
+.bell {
+  position: relative;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.bell > img {
+  height: 20px;
+}
+
+.bell > span {
+  padding: 1px 7px;
+  border-radius: 50%;
+  background-color: #ff9501;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+
+.user-logo {
+  margin-right: 10px;
+}
+
+.user-name > span {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+.user-name > a {
+  display: block;
+  color: #bf932d;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.proj-main {
+  padding: 10px 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.in-pro-btn {
+  padding: 5px 15px;
+  color: #000;
+  background-color: #f3dc53;
+}
+
+.in-pro-btn:hover {
+  background-color: #000;
+  color: #f3dc53;
+  transition: 0.3s;
+}
+
+.user-d-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.user-d {
+  display: flex;
+  align-items: center;
+}
+
+.amount-main > span {
+  font-size: 14px;
+  color: #a7a7a7;
+  display: block;
+}
+
+.amount-main > label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #bf932d;
+  display: block;
+}
+
+.id-name > span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.id-name > label {
+  color: #a7a7a7;
+  font-size: 14px;
+}
+
+.angle-btn {
+  background-color: #bf932d;
+  padding: 8px 12px;
+  text-align: center;
+  margin: 15px 0;
+  display: inline-block;
+}
+
+.action {
+  vertical-align: center;
+}
+
+.act-log {
+  font-size: 22px;
+}
+
+.single-page {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px #0000001f;
+}
+
+.single-page > div > span {
+  color: #a7a7a7;
+}
+
+.administrator > div > span {
+  font-size: 14zpx !important;
+}
+
+.mt-3 {
+  margin-top: 5px !important;
+}
+
+.add-2 {
+  color: #a7a7a7;
+  font-weight: 0 !important;
+}
+
+.proj-name > span {
+  color: #a7a7a7;
+  font-weight: 100;
+}
+
+.coutmer-details {
+  font-size: 12px;
+}
+
+.date > span {
+  color: #a7a7a7;
+  font-size: 12px;
+}
+/* ===========================================================================
+                                    * Media Query * 
+  ===============================================================================*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .nav-bg {
+    padding: 30px 10px;
+  }
+
+  .logo-main > img {
+    width: 80%;
+  }
+
+  /* User Section */
+
+  .bell {
+    padding: 15px;
+  }
+
+  .bell > span {
+    font-size: 12px;
+    top: 6px;
+    right: 5px;
+  }
+
+  .user-name > span {
+    font-size: 12px;
+  }
+
+  .user-name > a {
+    font-size: 12px;
+  }
+
+  .data-box {
+    margin: 14px 10px;
+    box-shadow: 0px 2px 6px #0000001f;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  .nav-bg {
+    padding: 30px 10px;
+  }
+
+  .logo-main > img {
+    width: 90%;
+  }
+
+  /* User Section */
+  .invoice-inv {
+    font-size: 16px !important;
+  }
+
+  .pay-btn {
+    font-size: 14px;
+  }
+
+  .addres > strong {
+    font-size: 17px !important;
+  }
+
+  .addres > p {
+    font-size: 14px;
+  }
+
+  .invoice-id > strong {
+    font-size: 14px;
+  }
+
+  .progres-btn {
+    font-size: 11px;
+  }
+
+  .user-name > span,
+  .user-name > a {
+    font-size: 13px;
+  }
+
+  .quotaion-amount {
+    font-size: 12px;
+  }
+
+  .deposit {
+    font-size: 13px;
+  }
+
+  .quo-amnt {
+    font-size: 15px;
+  }
+
+  .date {
+    font-size: 13px;
+  }
+
+  .dates {
+    font-size: 14px;
+  }
+
+  .paid-btn {
+    padding: 5px 12px;
+  }
+
+  .fv-main > span {
+    font-size: 14px;
+  }
+}
+
+/* User Section Special */
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1365px) {
+  #open-user {
+    pointer-events: visible;
+  }
+
+  .bars > a {
+    display: block;
+  }
+
+  .bell {
+    margin-right: 10px;
+  }
+
+  .user-main {
+    position: absolute;
+    right: 0;
+    width: 35% !important;
+    /* display: none; */
+  }
+
+  .amount-main > label {
+    font-size: 14px;
+  }
+
+  .id-name > label {
+    font-size: 12px;
+  }
+
+  .amount-main > span {
+    font-size: 12px;
+  }
+
+  .user-cont {
+    background-color: #fff;
+  }
+
+  .add-bg {
+    background-color: #f4f5f6;
+  }
+
+  .sec-cont-main {
+    display: none;
+  }
+
+  .data-section {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 1070px) and (max-device-width: 1199px) {
+  #open-user {
+    pointer-events: visible;
+  }
+
+  .user-main {
+    width: 32%;
+  }
+
+  .user-cont {
+    background-color: #fff;
+  }
+
+  .add-bg {
+    background-color: #f4f5f6;
+  }
+
+  .sec-cont-main {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  #open-user {
+    pointer-events: visible;
+  }
+
+  .bars > a {
+    display: block;
+  }
+
+  .bell {
+    margin-right: 0;
+  }
+
+  .user-main {
+    position: absolute;
+    right: 0;
+    width: 42%;
+  }
+
+  .user-cont {
+    background-color: #fff;
+  }
+
+  .add-bg {
+    background-color: #f4f5f6;
+  }
+
+  .sec-cont-main {
+    display: none;
+  }
+
+  .amount-main > span {
+    font-size: 12px;
+  }
+
+  .amount-main > label {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1397px) {
+  .sec-cont-main {
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (min-device-width: 1400px) and (max-device-width: 1455px) {
+  .sec-cont-main {
+    padding: 10px 6px;
+  }
+}
+
+@media only screen and (min-device-width: 1365px) and (max-device-width: 1455px) {
+  .graph-data {
+    margin-bottom: 1vw;
+  }
+}
+
+@media only screen and (min-device-width: 1400px) and (max-device-width: 1698px) {
+  .amount-main > span {
+    font-size: 11px;
+  }
+
+  .amount-main > label {
+    font-size: 14px;
+  }
+
+  .id-name > label {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1399px) {
+  .id-name > label {
+    font-size: 12px;
+  }
+
+  .amount-main > label {
+    font-size: 14px;
+  }
+
+  .amount-main > span {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,77 @@
+<svg id="calendar" xmlns="http://www.w3.org/2000/svg" width="14.333" height="14.333" viewBox="0 0 14.333 14.333">
+  <g id="Group_71" data-name="Group 71">
+    <g id="Group_70" data-name="Group 70">
+      <path id="Path_82" data-name="Path 82" d="M12.654,1.12h-.672V0h-1.12V1.12H3.471V0H2.352V1.12H1.68A1.682,1.682,0,0,0,0,2.8v9.854a1.682,1.682,0,0,0,1.68,1.68H12.654a1.682,1.682,0,0,0,1.68-1.68V2.8A1.682,1.682,0,0,0,12.654,1.12Zm.56,11.534a.561.561,0,0,1-.56.56H1.68a.561.561,0,0,1-.56-.56V5.263H13.214Zm0-8.511H1.12V2.8a.561.561,0,0,1,.56-.56h.672v1.12h1.12V2.24h7.391v1.12h1.12V2.24h.672a.561.561,0,0,1,.56.56Z" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_73" data-name="Group 73" transform="translate(2.345 6.515)">
+    <g id="Group_72" data-name="Group 72" transform="translate(0 0)">
+      <rect id="Rectangle_40" data-name="Rectangle 40" width="0.782" height="0.782" transform="translate(0)" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_75" data-name="Group 75" transform="translate(4.691 6.515)">
+    <g id="Group_74" data-name="Group 74" transform="translate(0 0)">
+      <rect id="Rectangle_41" data-name="Rectangle 41" width="0.782" height="0.782" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_77" data-name="Group 77" transform="translate(7.037 6.515)">
+    <g id="Group_76" data-name="Group 76" transform="translate(0 0)">
+      <rect id="Rectangle_42" data-name="Rectangle 42" width="0.782" height="0.782" transform="translate(0)" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_79" data-name="Group 79" transform="translate(8.6 6.515)">
+    <g id="Group_78" data-name="Group 78" transform="translate(0 0)">
+      <rect id="Rectangle_43" data-name="Rectangle 43" width="1.564" height="0.782" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_81" data-name="Group 81" transform="translate(10.946 6.515)">
+    <g id="Group_80" data-name="Group 80" transform="translate(0 0)">
+      <rect id="Rectangle_44" data-name="Rectangle 44" width="0.782" height="0.782" transform="translate(0)" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_83" data-name="Group 83" transform="translate(2.345 8.861)">
+    <g id="Group_82" data-name="Group 82" transform="translate(0 0)">
+      <rect id="Rectangle_45" data-name="Rectangle 45" width="0.782" height="0.782" transform="translate(0)" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_85" data-name="Group 85" transform="translate(4.691 8.861)">
+    <g id="Group_84" data-name="Group 84" transform="translate(0 0)">
+      <rect id="Rectangle_46" data-name="Rectangle 46" width="0.782" height="0.782" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_87" data-name="Group 87" transform="translate(7.037 8.861)">
+    <g id="Group_86" data-name="Group 86" transform="translate(0 0)">
+      <rect id="Rectangle_47" data-name="Rectangle 47" width="0.782" height="0.782" transform="translate(0)" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_89" data-name="Group 89" transform="translate(8.6 8.861)">
+    <g id="Group_88" data-name="Group 88" transform="translate(0 0)">
+      <rect id="Rectangle_48" data-name="Rectangle 48" width="1.564" height="0.782" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_91" data-name="Group 91" transform="translate(2.345 11.206)">
+    <g id="Group_90" data-name="Group 90" transform="translate(0 0)">
+      <rect id="Rectangle_49" data-name="Rectangle 49" width="0.782" height="0.782" transform="translate(0 0)" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_93" data-name="Group 93" transform="translate(4.691 11.206)">
+    <g id="Group_92" data-name="Group 92" transform="translate(0 0)">
+      <rect id="Rectangle_50" data-name="Rectangle 50" width="0.782" height="0.782" transform="translate(0 0)" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_95" data-name="Group 95" transform="translate(7.037 11.206)">
+    <g id="Group_94" data-name="Group 94" transform="translate(0 0)">
+      <rect id="Rectangle_51" data-name="Rectangle 51" width="0.782" height="0.782" transform="translate(0 0)" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_97" data-name="Group 97" transform="translate(8.6 11.206)">
+    <g id="Group_96" data-name="Group 96" transform="translate(0 0)">
+      <rect id="Rectangle_52" data-name="Rectangle 52" width="1.564" height="0.782" transform="translate(0 0)" fill="#bf932d"/>
+    </g>
+  </g>
+  <g id="Group_99" data-name="Group 99" transform="translate(10.946 8.861)">
+    <g id="Group_98" data-name="Group 98" transform="translate(0 0)">
+      <rect id="Rectangle_53" data-name="Rectangle 53" width="0.782" height="0.782" transform="translate(0)" fill="#bf932d"/>
+    </g>
+  </g>
+</svg>

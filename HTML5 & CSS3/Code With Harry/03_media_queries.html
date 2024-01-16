@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Size units</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid red;
+        }
+
+        .container {
+            font-size: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            font-size: 3em;
+            padding: 1em;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        #second {
+            border: 2px solid black;
+            font-size: 2rem;
+            padding: 2rem;
+            margin: 5px;
+        }
+
+        #third {
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        .box {
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        @media only screen and (max-width:500px) {
+            #box-1 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media only screen and (min-width: 501px) and (max-width:800px) {
+            #box-2 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width:1200px) {
+            #box-3 {
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            #box-4 {
+                display: block;
+                background-color: green;
+            }
+        }
+
+        /* if p is contained by any li which is contained by div */
+        div li p {
+            color: rgb(5, 9, 255);
+            background-color: rgba(81, 226, 245, 0.562);
+        }
+
+        /* if p is right inside div then this CSS will be applied */
+        div>p {
+            color: yellow;
+            background-color: rgb(109, 109, 109);
+        }
+
+        /* if p is right after div i.e p is the next sibling of div*/
+        div+p {
+            color: white;
+            background-color: rgb(238, 137, 137);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+
+    <div class="media_queries">
+        <div class="box" id="box-1">Mai ek iPhone hoon</div>
+        <div class="box" id="box-2">Mai ek Tablet hoon</div>
+        <div class="box" id="box-3">Mai ek desktop computer hoon</div>
+        <div class="box" id="box-4">Mai ek widescreen computer hoon</div>
+    </div>
+
+    <br>
+    <div class="container1">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p> this is another paragraph inside li</p>
+                </li>
+                <li>this will not get affected</li>
+                <p>this is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+
+</html>

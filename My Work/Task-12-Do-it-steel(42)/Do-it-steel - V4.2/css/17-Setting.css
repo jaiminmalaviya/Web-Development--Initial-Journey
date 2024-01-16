@@ -1,0 +1,334 @@
+/*============================== Page Cont Starts ============================*/
+
+.section-main {
+  padding: 0 30px 0 30px !important;
+}
+
+
+/*=============================== Content Starts ===========================*/
+.add-btn {
+  border: none;
+  background-color: #f3dc53;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 6px 14px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.save-btn {
+  border: none;
+  background-color: #f3dc53;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 10px 14px;
+}
+
+.save-btn:hover {
+  color: #fff;
+  background-color: #323b4a;
+}
+
+.true {
+  background-color: #41ad49;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 10px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.tax-rate {
+  width: 134px;
+}
+
+.head-shadow {
+  box-shadow: 0 2px 12px #ccc;
+  padding: 10px 0px 8px;
+}
+
+.slide-btn {
+  background-color: rgba(50, 59, 74, 0.2);
+  padding: 10px 14px;
+  border-radius: 3px;
+}
+
+.slide-btn0 {
+  background-color: rgba(50, 59, 74, 0.2);
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.slide-btn1 {
+  background-color: rgba(50, 59, 74, 1);
+  padding: 10px 15px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.slide-btn1:hover {
+  color: #fff;
+}
+
+.slide-btn2:hover {
+  color: #000;
+}
+
+.slide-btn2 {
+  background-color: rgba(50, 59, 74, 0);
+  color: #000;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+.down-arrow {
+  transform: rotate(-90deg);
+  margin-left: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.ca {
+  display: flex;
+  transform: translateY(10px);
+}
+
+.table-tr:hover {
+  background-color: #d2d4da;
+}
+
+.borders {
+  border: solid 2px rgba(209, 209, 209, 0.5);
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.text-warning {
+  color: rgba(191, 147, 45, 1) !important;
+}
+
+::placeholder{
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+/*=============================== Content End ============================*/
+
+/*============================== Page Cont End ============================*/
+
+/*=============================== User Section =============================*/
+.user-cont {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 16px;
+  background-color: #fff;
+  padding: 10px 16px;
+}
+
+.part-2 {
+  display: flex;
+  align-items: center;
+}
+
+.bell {
+  position: relative;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.bell > img {
+  height: 20px;
+}
+
+.bell > span {
+  padding: 1px 7px;
+  border-radius: 50%;
+  background-color: #ff9501;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+
+.user-logo {
+  margin-right: 10px;
+}
+
+.user-name > span {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+.user-name > a {
+  display: block;
+  color: #bf932d;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ===========================================================================
+                                  * Media Query * 
+===============================================================================*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .nav-bg {
+    padding: 30px 10px;
+  }
+
+  .logo-main > img {
+    width: 80%;
+  }
+
+  /* User Section */
+
+  .bell {
+    padding: 15px;
+  }
+
+  .bell > span {
+    font-size: 12px;
+    top: 6px;
+    right: 5px;
+  }
+
+  .user-name > span {
+    font-size: 12px;
+  }
+
+  .user-name > a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  .nav-bg {
+    padding: 30px 10px;
+  }
+
+  .logo-main > img {
+    width: 90%;
+  }
+
+  /* User Section */
+
+  .bell {
+    padding: 15px;
+  }
+
+  .bell > span {
+    font-size: 12px;
+    top: 6px;
+    right: 5px;
+  }
+
+  .user-name > span {
+    font-size: 12px;
+  }
+
+  .user-name > a {
+    font-size: 12px;
+  }
+
+  .slide-btn {
+    padding: 6px 14px;
+  }
+
+  .slide-btn0 {
+    padding: 6px 14px;
+  }
+
+  .slide-btn1 {
+    padding: 6px 14px;
+  }
+
+  .r-save-btn {
+    padding: 6px 14px;
+    margin-top: 45px;
+    margin-left: 25px;
+  }
+
+  .form-head {
+    font-size: 16px !important;
+  }
+
+  .r-label {
+    font-size: 13px;
+  }
+
+  .form-control {
+    font-size: 12px;
+  }
+}
+
+/* User Section Special */
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1365px) {
+  #open-user {
+    pointer-events: visible;
+  }
+
+  .bars > a {
+    display: block;
+  }
+
+  .bell {
+    margin-right: 10px;
+  }
+
+  .user-main {
+    position: absolute;
+    right: 0;
+    width: 40%;
+  }
+
+  .user-main {
+    position: absolute;
+    right: 0;
+    width: 32% !important;
+    /* display: none; */
+  }
+
+  .user-cont {
+    background-color: #fff;
+  }
+}
+
+@media only screen and (min-device-width: 1070px) and (max-device-width: 1199px) {
+  .user-cont {
+    background-color: #fff;
+  }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  #open-user {
+    pointer-events: visible;
+  }
+
+  .bars > a {
+    display: block;
+  }
+
+  .bell {
+    margin-right: 0;
+  }
+
+  .user-cont {
+    background-color: #fff;
+  }
+}

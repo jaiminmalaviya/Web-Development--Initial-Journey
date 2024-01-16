@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <!-- <base href="https://www.w3schools.com/" target="_blank"> -->
+    <style>
+        #t01 {
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+            width: 100%;
+            color: linen;
+            font-size: 25px;
+            font-family: allison;
+        }
+
+        #t01 td {
+            border: 2px solid black;
+            padding: 3px;
+            text-align: center;
+            width: 25%;
+        }
+
+        #t01 th {
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #t01 {
+            border-spacing: 10px;
+            background-color: rgb(4, 170, 109);
+        }
+
+        #t01 tr {
+            background-color: rgb(40, 42, 53);
+        }
+
+        #t01 td:nth-child(odd) {
+            /* border-collapse: collapse; */
+            background-color: rgb(99, 220, 250);
+        }
+
+        #t01 tr:nth-child(even) {
+            background-color: rgb(255, 64, 64);
+        }
+
+        caption {
+            margin: 5px;
+            font-size: 33px;
+            color: mediumblue;
+            font-weight: bolder;
+        }
+
+        /* Note: If the table has collapsed borders, border-spacing has no effect. */
+    </style>
+</head>
+
+<body>
+    <table style="width:100%;" id="t01">
+        <caption>Monthly savings</caption>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th colspan="2">Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td rowspan="2">Smith</td>
+                <td>Carl</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <center>
+        <iframe src="01_index.html" name="iframe_a" title="Iframe Example"
+            style=" height: 50vh; width: 50%; border: 0vw;"></iframe>
+    </center>
+    <p><a href="04_practice.html" target="iframe_a">04_practice.html</a></p>
+
+
+</body>
+
+</html>

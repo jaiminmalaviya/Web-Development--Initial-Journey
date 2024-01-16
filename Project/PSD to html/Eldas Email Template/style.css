@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  transition: all 5s;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+/******************NAVIGATION******************/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 95px;
+  margin-left: 80px;
+}
+
+nav ul {
+  display: flex;
+  margin-left: 250px;
+}
+
+nav ul li a {
+  height: 40px;
+  line-height: 43px;
+  /* display: inline-block; */
+  margin: 20px;
+  padding: 0 20px;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: #ff531e;
+  box-shadow: 4px 4px 10px #ff531eb0;
+}
+
+.active {
+  background-color: #ff531e;
+  color: #fff;
+  box-shadow: 4px 4px 10px #ff531eb0;
+}
+
+/******************MAIN******************/
+.main {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+  background: url(images/header-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.main-heading {
+  width: 500px;
+  position: absolute;
+  left: 17%;
+  top: 50%;
+  transform: translate(-17%, -50%);
+  transition: 1s;
+}
+
+.main-heading h1 {
+  font-size: 46px;
+  margin: 0px;
+  letter-spacing: 2px;
+  color: #161616;
+}
+
+.main-heading span {
+  color: #ff531e;
+}
+
+.main-heading p {
+  color: #4b4b4b;
+}
+
+.btn {
+  width: 140px;
+  height: 40px;
+  background-color: #ff531e;
+  border-radius: 15px;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background-color: #207ee8;
+  box-shadow: 4px 4px 10px #207de8c2;
+}
+
+/******************ABOUT******************/
+.about {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 7% 0px 6%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.about-img {
+  width: 50%;
+}
+
+.about img {
+  width: 600px;
+}
+
+.about-text {
+  width: 45%;
+  text-align: right;
+}
+
+.about-text h4 {
+  color: rgb(137, 158, 167);
+  letter-spacing: 2px;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #161616;
+}
+
+.about-text p {
+  color: #4b4b4b;
+  font-size: 1rem;
+}
+
+.about-btn {
+  float: right;
+  margin-top: 20px;
+}
+
+/******************SERVICES******************/
+.feature {
+  width: 100%;
+  height: 140vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.f-heading {
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.f-heading h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #161616;
+}
+
+.f-heading h4 {
+  color: rgb(137, 158, 167);
+  letter-spacing: 2px;
+}
+
+.f-container {
+  padding-left: 5%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 10px; */
+}
+
+.f-box {
+  padding: 15px;
+  width: 350px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: 0.4s ease-in-out;
+}
+.f-box:hover {
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.267);
+}
+/******************FOOTER******************/
+footer {
+  width: 100%;
+  height: 300px;
+  background-image: url(images/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2%;
+}
+
+.footer-heading {
+  /* height: 200px; */
+  /* margin-bottom: 50px; */
+}
+
+footer h5 {
+  text-align: center;
+  color: rgb(236, 236, 236);
+  letter-spacing: 2px;
+}
+
+footer h1 {
+  margin: -15px 0 30px 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  /* margin-bottom: 150px; */
+}
+
+footer p {
+  color: #eeeeee;
+  width: 1100px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  /* margin-top: -100px; */
+}

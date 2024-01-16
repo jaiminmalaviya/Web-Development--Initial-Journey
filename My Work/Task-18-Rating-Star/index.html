@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Star</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="d-flex align-items-center justify-content-center">
+    <div class="main-section">
+        <div class="heading text-center">
+            <h4>Quality wise Top Pwerformers(Last Week)</h4>
+        </div>
+
+        <div class="user-01">
+            <div class="row justify-content-around pt-3">
+                <div class="col-auto">
+                    <img src="img/Oval.png" alt="" height="50">
+                    <span class="px-2 icon-text">A W</span>
+                </div>
+                <div class="col-5" id="user-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="user-02">
+            <div class="row justify-content-around pt-1">
+                <div class="col-auto">
+                    <img src="img/Oval.png" alt="" height="50">
+                    <span class="px-2 icon-text">A W</span>
+                </div>
+                <div class="col-5" id="user-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="user-03">
+            <div class="row justify-content-around pt-1">
+                <div class="col-auto">
+                    <img src="img/Oval.png" alt="" height="50">
+                    <span class="px-2 icon-text">C S</span>
+                </div>
+                <div class="col-5" id="user-3">
+                </div>
+            </div>
+        </div>
+
+        <div class="user-04">
+            <div class="row justify-content-around pt-1">
+                <div class="col-auto">
+                    <img src="img/Oval.png" alt="" height="50">
+                    <span class="px-2 icon-text">R R</span>
+                </div>
+                <div class="col-5" id="user-4">
+                </div>
+            </div>
+        </div>
+
+        <div class="user-05">
+            <div class="row justify-content-around pt-1">
+                <div class="col-auto">
+                    <img src="img/Oval.png" alt="" height="50">
+                    <span class="px-2 icon-text">B M</span>
+                </div>
+                <div class="col-5" id="user-5">
+                </div>
+            </div>
+        </div>
+
+        <div class="user-06">
+            <div class="row justify-content-around pt-1">
+                <div class="col-auto">
+                    <img src="img/Oval.png" alt="" height="50">
+                    <span class="px-2 icon-text">A R</span>
+                </div>
+                <div class="col-5" id="user-6">
+                </div>
+            </div>
+        </div>
+
+        <div class="user-07">
+            <div class="row justify-content-around pt-1">
+                <div class="col-auto">
+                    <img src="img/Oval.png" alt="" height="50">
+                    <span class="px-2 icon-text">A W</span>
+                </div>
+                <div class="col-5" id="user-7">
+                </div>
+            </div>
+        </div>
+
+        <div class="user-08">
+            <div class="row justify-content-around pt-1">
+                <div class="col-auto">
+                    <img src="img/Oval.png" alt="" height="50">
+                    <span class="px-2 icon-text">C S</span>
+                </div>
+                <div class="col-5" id="user-8">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        let user1 = document.querySelector('#user-1');
+        let user2 = document.querySelector('#user-2');
+        let user3 = document.querySelector('#user-3');
+        let user4 = document.querySelector('#user-4');
+        let user5 = document.querySelector('#user-5');
+        let user6 = document.querySelector('#user-6');
+        let user7 = document.querySelector('#user-7');
+        let user8 = document.querySelector('#user-8');
+
+        function ratingStar(id, star) {
+            debugger;
+            let fullStar = Math.floor(star);
+            let halfStar = (star % 1).toFixed(1);
+            let ratingBox = id;
+
+            for (let i = 0; i < fullStar; i++) {
+                let starImg = document.createElement('span');
+                starImg.innerHTML = '<img src="img/star.png" alt="" srcset="" style="padding: 0.8rem 0.4rem;" height="44">';
+                ratingBox.appendChild(starImg);
+            }
+
+            if (halfStar == 0.5) {
+                let starImg = document.createElement('span');
+                starImg.innerHTML = '<img src="img/rating.png" alt="" srcset="" style="padding: 0.8rem 0.4rem;" height="44">';
+                ratingBox.appendChild(starImg);
+            }
+        }
+
+        ratingStar(user1, 5);
+        ratingStar(user2, 4.5);
+        ratingStar(user3, 0);
+        ratingStar(user4, 3.5);
+        ratingStar(user5, 3);
+        ratingStar(user6, 2.5);
+        ratingStar(user7, 1);
+        ratingStar(user8, 0.5);
+
+    </script>
+
+</body>
+
+</html>

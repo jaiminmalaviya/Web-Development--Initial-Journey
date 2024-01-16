@@ -1,0 +1,135 @@
+body {
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('../Img/bg.png');
+    background-size: 134%;
+    background-attachment: fixed;
+}
+
+header {
+    height: 111px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    box-sizing: border-box;
+    background: url(../Img/bg.png);
+    background-size: 134%;
+    background-attachment: fixed;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 60px;
+    top: 4px;
+}
+
+.left img {
+    width: 85px;
+    display: block;
+    filter: invert(100%);
+    margin: auto;
+}
+
+.left div {
+    line-height: 2px;
+    font-size: 21px;
+    text-align: center;
+}
+
+.mid {
+    display: block;
+    width: 56%;
+    margin: auto;
+    padding-top: 21px;
+    /* border: 2px solid green; */
+}
+
+.right {
+    position: absolute;
+    right: 34px;
+    top: 40px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 26px;
+
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: #acabab;
+
+}
+
+.btn {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 5px;
+    background-color: black;
+    color: white;
+    padding: 0px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 33px;
+}
+
+.btn:hover {
+    background-color: rgb(31, 30, 30);
+}
+
+.container {
+    border: 2px solid white;
+    margin: 50px 120px;
+    padding: 30px 42px;
+    width: 465px;
+    border-radius: 28px;
+    background-color: rgba(128, 128, 128, 0.205);
+    margin-bottom: 220px;
+}
+
+.form-group input {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    display: block;
+    width: 425px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 8px auto;
+    line-height: 32px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+::placeholder {
+    color: rgb(153, 153, 152);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 50%;
+    margin: 25px auto;
+}

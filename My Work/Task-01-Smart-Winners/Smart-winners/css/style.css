@@ -1,0 +1,929 @@
+/* 
+------------------------------------------------------
+              --- TABLE OF CONTENT ---
+---------------------------------------------------------
+
+  01.  Fonts
+  02.  Global CSS
+  03.  Header
+  04.  Section - 1
+  05.  Section - 2
+  06.  Section - 3
+  07.  Section - 4
+  08.  Section - 5
+  09.  Footer
+
+--------------------------------------------------------
+*/
+
+/* 
+============================================================= 
+                           Fonts
+============================================================= 
+*/
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v29-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v29-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v29-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v29-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v29-latin-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v29-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v29-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v29-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v29-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v29-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/roboto-v29-latin-500.svg#Roboto")
+      format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v29-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v29-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v29-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v29-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v29-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/roboto-v29-latin-700.svg#Roboto")
+      format("svg");
+  /* Legacy iOS */
+}
+
+/* 
+============================================================= 
+                        Global CSS
+=============================================================   
+*/
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --red: #f30000;
+  --green: #13902a;
+  --yellow: #f7d300;
+  --blue: #0061a3;
+  --white: #ffffff;
+  --grey: #5f5f5f;
+  --black: #000000;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+a {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 2.4rem !important;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.8rem !important;
+  line-height: 1.5em;
+}
+
+/* 
+============================================================= 
+                      Header
+=============================================================  
+*/
+
+.heading {
+  font-weight: 700;
+  background: var(--red);
+  border-radius: 8px;
+  text-align: center;
+  color: var(--white);
+  padding: 0.8rem;
+}
+
+.logobar {
+  margin: 25px 0 15px;
+  font-size: 1.4rem;
+  display: flex;
+}
+
+.logo {
+  margin-right: 3rem;
+}
+.logo a {
+  display: inline-block;
+}
+
+.logo img {
+  width: 27.9rem;
+  height: 6rem;
+}
+
+.user-info {
+  padding-top: 1rem;
+}
+
+.user-info span,
+.user-info a {
+  font-weight: 700;
+}
+
+.user-info .logout {
+  color: var(--blue);
+}
+
+.social-media {
+  padding: 0.5rem 0;
+  margin-right: 2rem;
+}
+
+.social-media img {
+  margin-right: 1rem;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.language {
+  margin-top: 1rem;
+}
+
+.language img {
+  width: 2.2rem;
+  height: 1.5rem;
+}
+
+.language .dropdown-toggle::after {
+  display: none;
+}
+
+.language button {
+  padding: 0;
+  margin-left: 1rem;
+  border: 0;
+}
+
+.language .dropdown img {
+  width: 1.6rem;
+  height: 0.8rem;
+  margin: 0.5rem;
+}
+
+.btn:focus {
+  box-shadow: 0 0;
+}
+
+.dropdown-menu {
+  font-size: 1.4rem;
+  inset: 2px 2px auto auto !important;
+}
+
+.dropdown-menu a {
+  padding: 0.4rem 0.8rem !important;
+}
+
+/* ================ Navbar ================== */
+.navbar {
+  font-size: 1.6rem;
+  line-height: 120%;
+  padding: 0;
+  background-color: var(--red);
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.nav-item-line {
+  border-left: 1px solid #ffffff;
+  background-color: var(--white);
+}
+
+.nav-link {
+  margin: 0.75rem 2.5rem !important;
+  display: inline-block;
+  color: var(--white);
+}
+
+.nav-link:hover {
+  color: var(--white);
+}
+
+.navbar .active {
+  text-decoration-line: underline;
+}
+
+.account-btn {
+  background: var(--blue);
+  border-radius: 8px;
+  margin-right: -8px;
+}
+
+.account-link {
+  margin: 0.75rem 3.8rem !important;
+  display: inline-block;
+  color: var(--white);
+}
+
+.account-link:hover {
+  color: var(--white);
+}
+
+/* 
+=============================================================== 
+                         Section - 1
+=============================================================== 
+*/
+.section-1 {
+  margin-bottom: 7.5rem;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+.user-option {
+  margin-top: 3rem;
+  padding: 0 0.75rem;
+  display: flex;
+}
+
+.user-option-card {
+  margin: 0 0.75rem;
+  padding: 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+}
+
+.user-option-card img {
+  width: 7rem;
+}
+
+.user-option-card .card-heading {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+.user-option-card .card-link {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  text-decoration-line: underline;
+  margin-right: 1.2rem;
+}
+
+.user-option-card .card-link a {
+  color: var(--blue);
+}
+
+.user-option-card p {
+  font-size: 1.4rem;
+  line-height: 120%;
+  color: var(--grey);
+  margin-top: 0.5rem !important;
+}
+
+.user-option .card-3 img {
+  width: 8rem;
+}
+
+/* 
+=============================================================== 
+                         Section - 2
+=============================================================== 
+*/
+.section-2 h4 {
+  margin-left: 0.9rem !important;
+}
+
+.lottery-draw {
+  margin-top: 3rem;
+  padding: 0 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.section-2 .lottery-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 0 0.75rem;
+  border-bottom: 0;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.lottery-img {
+  height: 8rem;
+  width: 14rem;
+  margin: 0.6rem 0 0.5rem 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lottery-img img {
+  width: 7.2rem;
+}
+
+.lottery-card-amount {
+  margin-top: 2.6rem;
+  padding-bottom: 1.2rem;
+}
+
+.lottery-card-amount img {
+  width: 2.2rem;
+  height: 1.5rem;
+  margin-top: -0.4rem;
+}
+
+.lottery-card-amount-heading {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 120%;
+  margin: 0px 1rem;
+}
+
+.lottery-card-amount-number {
+  margin-top: 1.4rem;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 2.2rem;
+  display: block;
+  color: var(--green);
+}
+
+.lottery-amount-time {
+  border-radius: 0 0 8px 0;
+  text-align: center;
+  padding: 0;
+}
+
+.lottery-card .button-box {
+  text-align: center;
+  background-color: var(--blue);
+  border-radius: 0 0 0 8px;
+  padding: 1.2rem 0 0.9rem;
+}
+
+.button-box button {
+  background: var(--yellow);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  padding: 0.6rem 5.2rem;
+  border: 0;
+}
+
+.lottery-amount-time .lottery-time {
+  font-weight: 500;
+  font-size: 1.8rem;
+  background-color: var(--blue);
+  padding: 2rem;
+  border-radius: 0 0 8px 0;
+  line-height: 1.8rem;
+  color: var(--white);
+  margin-left: -1px;
+}
+
+.lottery-time img {
+  width: 1.8rem;
+}
+
+/* 
+=============================================================== 
+                         Section - 3
+=============================================================== 
+*/
+.section-3 {
+  margin: 7.5rem 0;
+}
+
+.section-3 .heading {
+  margin: 0 1.5rem;
+}
+
+.upcoming-lottery {
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+}
+
+.upcoming-lottery-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem;
+  min-width: 20rem;
+  width: 100%;
+  max-width: 21rem;
+  margin: 0 0.5rem 1.5rem;
+}
+
+.upcoming-lottery-card-bookmark {
+  position: absolute;
+  right: 1.8rem;
+  top: 1rem;
+}
+
+.upcoming-lottery-card-bookmark img {
+  width: 1.8rem;
+}
+
+.upcoming-lottery-card-img {
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  width: 9.5rem;
+  height: 9.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.8rem;
+}
+
+.upcoming-lottery-card-img img {
+  width: 8rem;
+}
+
+.upcoming-lottery-card-amount-heading img {
+  width: 2rem;
+}
+
+.upcoming-lottery-card-amount-heading span {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 120%;
+  margin: 0 3px;
+}
+
+.upcoming-lottery-card-amount-number {
+  margin-top: 0.8rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.upcoming-lottery-time {
+  margin: 0.8rem 0 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.upcoming-lottery-time img {
+  width: 1.6rem;
+}
+
+.upcoming-lottery-time span {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: var(--blue);
+  margin: 0 0.4rem;
+}
+
+.upcoming-lottery-card button {
+  background: var(--yellow);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  padding: 0.7rem;
+  width: 100%;
+  border: 0;
+}
+
+.more-details-link a {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-weight: 500;
+  text-decoration-line: underline;
+  color: var(--blue);
+  margin-right: 5rem !important;
+}
+
+/* 
+=============================================================== 
+                         Section - 4
+=============================================================== 
+*/
+.section-4 {
+  margin: 0 1.5rem;
+}
+
+/* ================ Biggest Lottery Winner ================== */
+.biggest-lottery-winner {
+  margin-right: 1.5rem;
+  width: 77.5rem;
+}
+
+.blw-content {
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.blw-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  margin-right: 4rem;
+}
+
+.blw-amount img {
+  width: 5rem;
+}
+
+.blw-amount > :nth-child(2) {
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 1.5em;
+  margin: 0 1rem 0 2rem;
+}
+
+.blw-amount > :nth-child(3) {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 2.2rem;
+  color: var(--blue);
+}
+
+.blw-img-date {
+  padding: 0;
+  margin-right: 1.5rem;
+  min-width: 50%;
+}
+
+.blw-img img {
+  width: 100%;
+}
+
+.blw-date {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.blw-date > span {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 120%;
+  margin-right: 1rem;
+}
+
+.date {
+  background: var(--red);
+  border-radius: 50px;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: var(--white);
+  margin-right: 0.4rem;
+  display: inline-block;
+}
+
+.date-content {
+  font-size: 1.2rem;
+  line-height: 130%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.blw-info {
+  max-width: 23.2rem;
+}
+
+.blw-info span {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.blw-info p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin-bottom: 3.2rem !important;
+}
+
+.blw-info a {
+  display: block;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 120%;
+  text-decoration-line: underline;
+  color: var(--blue);
+  text-align: center;
+  margin-bottom: 3.4rem !important;
+}
+
+.blw-info button {
+  background: var(--yellow);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 130%;
+  padding: 1rem;
+  border: 0;
+  width: 100%;
+}
+
+/* ================ Latest Lottery Winner ================== */
+.latest-lottery-winner {
+  width: 34%;
+}
+
+.prize-paid {
+  padding: 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.prize-paid :nth-child(1),
+.prize-paid :nth-child(4) {
+  font-size: 1.8rem;
+  line-height: 120%;
+}
+
+.prize-paid :nth-child(2) {
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 2.2rem;
+  color: var(--green);
+  margin: 0.5rem;
+}
+
+.prize-paid :nth-child(3) {
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 120%;
+}
+
+.prize-paid :nth-child(4) {
+  margin: 0 0 0 0.8rem;
+}
+
+.llw-user-box {
+  padding: 0.4rem 1.5rem 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.llw-user-box img {
+  width: 7.5rem;
+}
+
+.llw-user-info {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin-left: 1.5rem;
+  padding-top: 0.4rem;
+}
+
+.llw-user-info :nth-child(2) img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.llw-user-info :nth-child(3) {
+  color: var(--grey);
+}
+
+.section-5 {
+  margin: 5.2rem 1.5rem 7.5rem;
+}
+
+/* 
+=============================================================== 
+                         Section - 5
+=============================================================== 
+*/
+.section-5 > h4 {
+  margin-left: 0.5rem !important;
+  margin-bottom: 1.6rem !important;
+}
+
+.accordion {
+  width: 77.6rem;
+}
+
+.accordion-button {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: var(--blue);
+  padding: 1.8rem 2rem 1rem;
+  outline: 0;
+}
+
+.accordion-body {
+  padding: 1.5rem 2rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.accordion-button::after {
+  background-image: url("../images/vector-grey.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/vector-grey.svg");
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.accordion-button:focus,
+.accordion-button:active {
+  box-shadow: inset 0 0;
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-flush .accordion-item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* 
+=============================================================== 
+                          Footer
+=============================================================== 
+*/
+footer {
+  background: url("../images/footer-bg.png") no-repeat top;
+  background-size: contain;
+  padding: 13.6rem 10.8rem 5.5rem !important;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+footer .footer-social-link {
+  margin-bottom: 3.6rem;
+}
+
+footer .whatsapp-link img {
+  width: 3.6rem;
+  margin-right: 1.5rem;
+}
+
+footer .footer-heading {
+  font-weight: 500;
+  display: block;
+}
+
+.whatsapp-content > :nth-child(2) {
+  font-size: 1.3rem;
+  color: var(--grey);
+}
+
+.other-social-link {
+  margin-right: 2.4rem;
+}
+
+.other-social-link img {
+  width: 3.6rem;
+  margin-left: 1rem;
+}
+
+.useful-link a {
+  margin-bottom: 0.5rem !important;
+  display: block;
+  color: var(--black);
+}
+
+.useful-link .footer-heading {
+  margin-bottom: 1.5rem;
+}
+
+.company-info {
+  margin: 0 4rem;
+}
+
+.company-info .footer-heading {
+  margin-bottom: 1.5rem;
+}
+
+.company-info p {
+  font-size: 1.3rem;
+  line-height: 120%;
+  margin-bottom: 0.6rem !important;
+  width: 25rem;
+}
+
+.company-info address {
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  width: 23.7rem;
+}
+
+.payment-method {
+  width: 15.2rem;
+}
+
+.payment-link {
+  margin-bottom: 2.2rem;
+}
+
+.payment-link .footer-heading {
+  margin-bottom: 1rem;
+}
+
+.payment-link img {
+  width: 4.4rem;
+  margin-bottom: 1rem;
+}
+
+.payment-link a:nth-child(2) img,
+.payment-link a:nth-child(5) img,
+.payment-link a:nth-child(8) img {
+  margin: 0 1rem;
+}
+
+.secure-trust .footer-heading {
+  margin-bottom: 1.2rem;
+}
+
+.secure-trust img:nth-child(1) {
+  width: 6.4rem;
+  margin-right: 1rem;
+}
+.secure-trust img:nth-child(2) {
+  width: 6.65rem;
+}

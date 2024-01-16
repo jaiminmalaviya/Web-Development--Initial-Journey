@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" id="a"><br>
+        <input type="text" id="b"><br>
+        <input type="text" id="c">
+        <input type="submit" id="btn" onclick="sum1()">
+
+    </form>
+</body>
+<script>
+
+    function sum1() {
+        let a = parseFloat(document.getElementById('a').value);
+        let a = number(a);
+        let b = parseFloat(document.getElementById('b').value);
+        let c = document.getElementById('c');
+        c.value = a + b;
+    }
+</script>
+
+</html>

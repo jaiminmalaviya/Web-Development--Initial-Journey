@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10-Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Date CSS -->
+    <link rel="stylesheet" href="css/daterangepicker.css">
+
+    <!-- Date -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/common-style.css" />
+    <link rel="stylesheet" href="css/10-Dashboard.css" />
+
+</head>
+
+<body>
+    <div class="main-div">
+
+        <!-- Alert Message Modal -->
+        <div class="row">
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="pop-up-img">
+                                <img src="images/pop-up-img.svg" alt="" />
+                            </div>
+                            <p>
+                                Office Starts at 9.00 AM and Now its 9.10 AM. You are late for
+                                the work, Be on time ......
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- Navigation Start -->
+            <div class="col-2">
+                <div class="nav-bg">
+                    <div class="logo-main">
+                        <img src="images/logo.svg" alt="" />
+                    </div>
+
+                    <!-- Navigation Item -->
+                    <div class="nav-items-main">
+                        <div class="single-nav-item a-nav">
+                            <a href="10-Dashboard.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-1.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Dashboard</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="13-leads.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-2.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Leads</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="20-Quotations.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-3.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Quotations</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="14-Invoices.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-4.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Invoices</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="21-Commisions.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-5.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Commissions</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="16-Projects.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-6.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Projects</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="15-Emails.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-7.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Emails</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="#">
+                                <div class="nav-img">
+                                    <img src="images/nav-8.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Reports</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="11-Users.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-9.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Users</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="17-Setting.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-10.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Settings</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="18-My-Account.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-11.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>My Account</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="single-nav-item">
+                            <a href="19-Notification.html">
+                                <div class="nav-img">
+                                    <img src="images/nav-12.svg" alt="" />
+                                </div>
+                                <div class="nav-name">
+                                    <span>Notifications</span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Navigation End -->
+
+            <!-- Body Section Start -->
+            <div class="col-10 section-main" id="section-main">
+                <div class="row">
+
+                    <!-- Data Section Start -->
+                    <div class="col-xl-8 data-section">
+
+                        <!-- Clear btn -->
+                        <div class="row justify-content-between">
+                            <div class="col-6">
+                                <div class="row justify-content-end">
+                                    <div class="col-auto text-center cl-btn-222" id="clear-btn">
+                                        <a href="#" class="clear-btn">Clear</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Page Heading -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-main-h">
+                                    <span>Good Morning, Michal</span>
+                                    <div class="page-path">
+                                        <span>Welcome to Do It All Steel.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Date-menu -->
+                        <div class="row text-center justify-content-end">
+                            <div class="col-auto">
+                                <div class="row date-menu">
+                                    <div class="col-auto p-0">
+                                        <input type="text" id="config-demo" class="form-control">
+                                        <img src="images/calendar.svg" class="cal-img" alt="" />
+                                        <a href="#" class="arrow-down-icon">
+                                            <img src="images/arrow-down.svg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section-01 -->
+                        <div class="row data-section-1">
+                            <div class="col-3 data-box">
+                                <div class="row text-center">
+                                    <div class="col-12 my-3">
+                                        <h1>175</h1>
+                                    </div>
+                                    <div class="col-12">
+                                        <h4>TOTAL</h4>
+                                        <p>Open Leads</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 data-box">
+                                <div class="row text-center">
+                                    <div class="col-12 my-3">
+                                        <h1>175</h1>
+                                    </div>
+                                    <div class="col-12">
+                                        <h4>TOTAL</h4>
+                                        <p>Open Opportunities</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 data-box">
+                                <div class="row text-center">
+                                    <div class="col-12 my-3">
+                                        <h1>200</h1>
+                                    </div>
+                                    <div class="col-12">
+                                        <h4>TOTAL</h4>
+                                        <p>Open Quotations</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 data-box">
+                                <div class="row text-center">
+                                    <div class="col-12 my-3">
+                                        <h1>$150</h1>
+                                    </div>
+                                    <div class="col-12">
+                                        <h4>TOTAL</h4>
+                                        <p>due Invoices amount</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section-02 -->
+                        <div class="row data-section-2">
+                            <div class="col-4 chart-box">
+                                <p>Total Leads vs Total Opportunity</p>
+                                <div class="row chart-box-data">
+                                    <div class="col-12 text-center my-4 ">
+                                        <img src="images/chart-1.svg" alt="">
+                                    </div>
+                                    <div class="row align-items-center ms-3 mb-4">
+                                        <div class=" col-12">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 chart-color-box c-1"></div>
+                                                <p class="col-auto">Total Leads</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 chart-color-box c-2"></div>
+                                                <p class="col-auto">Total Opportunity</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 chart-box">
+                                <p>Total Proposals vs Total Conversions</p>
+                                <div class="row chart-box-data">
+                                    <div class="col-12 text-center my-4">
+                                        <img src="images/chart-2.svg" alt="">
+                                    </div>
+                                    <div class="row align-items-center ms-3 mb-4">
+                                        <div class=" col-12">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 chart-color-box c-3"></div>
+                                                <p class="col-auto">Total Proposals</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 chart-color-box c-4"></div>
+                                                <p class="col-auto">Total Conversions</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 chart-box">
+                                <p>Total Revenue vs Total Building Cost Paid</p>
+                                <div class="row chart-box-data">
+                                    <div class="col-12 text-center my-4">
+                                        <img src="images/chart-3.svg" alt="">
+                                    </div>
+                                    <div class="row align-items-center ms-3 mb-4">
+                                        <div class=" col-12">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 chart-color-box c-5"></div>
+                                                <p class="col-auto">Total Revenue</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 chart-color-box c-6"></div>
+                                                <p class="col-auto">Total Building Cost Paid</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section-03 -->
+                        <div class="row data-section-3">
+                            <div class="col-12 graph-box">
+                                <p>Leads vs Opportunity vs Quotation vs Revenue</p>
+                                <div class="row graph-box-data">
+                                    <div class="col-8">
+                                        <img src="images/graph.svg" class="graph-img" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col-12 p-0">
+                                                <a href="#" class="graph-btn g-btn-1">Daily</a>
+                                                <a href="#" class="graph-btn g-btn-2">Weekly</a>
+                                                <a href="#" class="graph-btn graph-btn-a g-btn-3">Monthly</a>
+                                            </div>
+                                            <div class="col-12 p-0 graph-data mt-4">
+                                                <h4>LEADS</h4>
+                                                <h3>10</h3>
+                                            </div>
+                                            <div class="col-12 p-0 graph-data">
+                                                <h4>OPPORTUNITY</h4>
+                                                <h3>10</h3>
+                                            </div>
+                                            <div class="col-12 p-0 graph-data">
+                                                <h4>QUOTATIONS</h4>
+                                                <h3>10</h3>
+                                            </div>
+                                            <div class="col-12 p-0 graph-data">
+                                                <h4>BUILDINGS DELIVERED</h4>
+                                                <h3>10</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="row footer">
+                            <div class="col-12 text-center">
+                                <p>Copyright 2021. All rights are reserved.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Data Section End -->
+
+                    <!-- User Section Start -->
+                    <div class="col-xl-4 user-main">
+
+                        <!-- User Section Header -->
+                        <div class="user-cont user-bottom">
+                            <div class="part-2">
+                                <div class="bell" id="open-user">
+                                    <img src="images/bell.svg" alt="" />
+                                    <span>3</span>
+                                </div>
+                                <div class="user-logo">
+                                    <img src="images/user-logo.svg" alt="" />
+                                </div>
+                                <div class="user-name">
+                                    <span>MANUFACTURER</span>
+                                    <a href="#">shikha@doitallsteel.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section-04 -->
+                        <div class="sec-cont-main">
+
+                            <div class="row">
+                                <div class="col-6 fv-main">
+                                    <img src="images/star.svg" alt="" />
+                                    <span>FAVOURITES</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span style="color: #a7a7a7">20</span>
+                                </div>
+                            </div>
+                            <!-- Part-01 -->
+                            <div class="row proj-main">
+                                <div class="col-6 proj-name">
+                                    <span>Project name 1</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <a href="#" class="in-pro-btn">In Progress</a>
+                                </div>
+                                <div class="col-12 user-d-main">
+                                    <div class="user-d">
+                                        <div class="user-logo">
+                                            <img src="images/user-logo.svg" alt="" />
+                                        </div>
+                                        <div class="user-name">
+                                            <span>AGENT</span>
+                                            <a href="#">shikha@doitallsteel.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="amount-main">
+                                        <span>QUOTATION AMOUNT</span>
+                                        <label>$2,500,000</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Part-02 -->
+                            <div class="row proj-main">
+                                <div class="col-6 proj-name">
+                                    <span>Project name 2</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <a href="#" class="in-pro-btn">In Progress</a>
+                                </div>
+                                <div class="col-12 user-d-main">
+                                    <div class="user-d">
+                                        <div class="user-logo">
+                                            <img src="images/user-logo.svg" alt="" />
+                                        </div>
+                                        <div class="user-name">
+                                            <span>AGENT</span>
+                                            <a href="#">shikha@doitallsteel.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="amount-main">
+                                        <span>QUOTATION AMOUNT</span>
+                                        <label>$2,500,000</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Part-03 -->
+                            <div class="row proj-main">
+                                <div class="col-6 proj-name">
+                                    <span>Project name 3</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <a href="#" class="in-pro-btn">In Progress</a>
+                                </div>
+                                <div class="col-12 user-d-main">
+                                    <div class="user-d">
+                                        <div class="user-logo">
+                                            <img src="images/user-logo.svg" alt="" />
+                                        </div>
+                                        <div class="user-name">
+                                            <span>AGENT</span>
+                                            <a href="#">shikha@doitallsteel.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="amount-main">
+                                        <span>QUOTATION AMOUNT</span>
+                                        <label>$2,500,000</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Next Page btn -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="#" class="angle-btn"><img src="images/angle-left-White.svg" alt=""></a>
+                                    <a href="#" class="angle-btn"><img src="images/angle-right-White.svg" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 fv-main">
+                                    <span>OPEN INVOICE</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span style="color: #a7a7a7">20</span>
+                                </div>
+                            </div>
+                            <!-- Part-04 -->
+                            <div class="row proj-main">
+                                <div class="col-6 id-name">
+                                    <span>Invoice ID</span>
+                                    <label>Project Information Total Due Invoices Amount</label>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <div class="amount-main">
+                                        <span>DUE</span>
+                                        <label>$2,500,000</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="amount-main">
+                                        <span>DATE</span>
+                                        <label>09/10/2021</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="amount-main">
+                                        <span>DUE DATE</span>
+                                        <label>09/10/2021</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="amount-main">
+                                        <span>CUSTOMER NAME</span>
+                                        <label>Do It All Steel</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- part-05 -->
+                            <div class="row proj-main">
+                                <div class="col-6 id-name">
+                                    <span>Invoice ID</span>
+                                    <label>Project Information Total Due Invoices Amount</label>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <div class="amount-main">
+                                        <span>DUE</span>
+                                        <label>$2,500,000</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="amount-main">
+                                        <span>DATE</span>
+                                        <label>09/10/2021</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="amount-main">
+                                        <span>DUE DATE</span>
+                                        <label>09/10/2021</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="amount-main">
+                                        <span>CUSTOMER NAME</span>
+                                        <label>Do It All Steel</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Part-06 -->
+                            <div class="row proj-main">
+                                <div class="col-6 id-name">
+                                    <span>Invoice ID</span>
+                                    <label>Project Information Total Due Invoices Amount</label>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <div class="amount-main">
+                                        <span>DUE</span>
+                                        <label>$2,500,000</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="amount-main">
+                                        <span>DATE</span>
+                                        <label>09/10/2021</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="amount-main">
+                                        <span>DUE DATE</span>
+                                        <label>09/10/2021</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="amount-main">
+                                        <span>CUSTOMER NAME</span>
+                                        <label>Do It All Steel</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Next Page btn -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="#" class="angle-btn"><img src="images/angle-left-White.svg" alt=""></a>
+                                    <a href="#" class="angle-btn"><img src="images/angle-right-White.svg" alt=""></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- User Section End -->
+
+                </div>
+            </div>
+            <!-- Body Section End -->
+
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Date Range Picker -->
+    <script src="Js/daterangepicker.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#config-text').keyup(function () {
+                eval($(this).val());
+            });
+
+            $('.configurator input, .configurator select').change(function () {
+                updateConfig();
+            });
+
+            $('.demo i').click(function () {
+                $(this).parent().find('input').click();
+            });
+
+            $('#startDate').daterangepicker({
+                singleDatePicker: true,
+                startDate: moment().subtract(6, 'days')
+            });
+
+            $('#endDate').daterangepicker({
+                singleDatePicker: true,
+                startDate: moment()
+            });
+
+            updateConfig();
+
+            function updateConfig() {
+                var options = {};
+
+                if ($('#autoApply').is(':checked'))
+                    options.autoApply = true;
+
+                if ($('#dateLimit').is(':checked'))
+                    options.dateLimit = { days: 7 };
+
+                if ($('#ranges').is(':checked')) {
+                    options.ranges = {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    };
+                }
+
+                if ($('#locale').is(':checked')) {
+                    $('#rtl-wrap').show();
+                    options.locale = {
+                        direction: $('#rtl').is(':checked') ? 'rtl' : 'ltr',
+                        format: 'MM/DD/YYYY HH:mm',
+                        separator: ' - ',
+                        applyLabel: 'Apply',
+                        cancelLabel: 'Cancel',
+                        fromLabel: 'From',
+                        toLabel: 'To',
+                        customRangeLabel: 'Custom',
+                        daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                        monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                        firstDay: 1
+                    };
+                } else {
+                    $('#rtl-wrap').hide();
+                }
+
+                $('#config-text').val("$('#demo').daterangepicker(" + JSON.stringify(options, null, '    ') + ", function(start, end, label) {\n  console.log(\"New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')\");\n});");
+
+                $('#config-demo').daterangepicker(options, function (start, end, label) { console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')'); }).click();;
+
+            }
+
+        });
+
+    </script>
+
+    <!-- Navigation JS -->
+    <script>
+
+        // On Load Popup
+        $(window).on("load", function () {
+            var delayMs = 0;
+
+            setTimeout(function () {
+                $("#myModal").modal("show");
+            }, delayMs);
+
+            $(".close").click(function () {
+                $("#myModal").modal("hide");
+            });
+        });
+
+
+        // Navigation Bar Toggle
+        let score = 0;
+        $("#open-user").on("click", function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $(".sec-cont-main").toggle(
+                "slide",
+                { direction: "right" },
+                500,
+                score++,
+            );
+            $(".user-cont").toggleClass(
+                "add-bg",
+                { direction: "right" },
+                500,
+            );
+        });
+
+        $('.section-main').scroll(function () {
+            var sticky = $('.user-main'),
+                scroll = $('.section-main').scrollTop();
+
+            if (scroll >= 100) {
+                if (score % 2 == 0) sticky.addClass('fixed');
+                else sticky.removeClass('fixed');
+            }
+            else sticky.removeClass('fixed');
+        });
+
+        // Graph Button
+        $('.g-btn-1').click(function () {
+            $('.g-btn-1').addClass('graph-btn-a');
+            $('.g-btn-2').removeClass('graph-btn-a');
+            $('.g-btn-3').removeClass('graph-btn-a');
+        });
+
+        $('.g-btn-2').click(function () {
+            $('.g-btn-2').addClass('graph-btn-a');
+            $('.g-btn-1').removeClass('graph-btn-a');
+            $('.g-btn-3').removeClass('graph-btn-a');
+        });
+
+        $('.g-btn-3').click(function () {
+            $('.g-btn-3').addClass('graph-btn-a');
+            $('.g-btn-1').removeClass('graph-btn-a');
+            $('.g-btn-2').removeClass('graph-btn-a');
+        });
+
+    </script>
+
+</body>
+
+</html>

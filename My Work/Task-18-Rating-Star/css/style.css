@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   height: 100vh;
+   background-color: #c1c1e285;
+}
+
+.main-section{
+    width: 520px;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 520px;
+}
+
+.heading{
+    padding: 16px;
+    border-bottom: 2px solid #E9EAEC;
+}
+
+.heading h4{
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.rating-star{
+    padding: 10px;
+}
